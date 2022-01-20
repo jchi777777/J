@@ -1630,6 +1630,7 @@ main section.figure div.title h4 {
 @media screen and (max-width: 575px) {
   main section.figure div.title h4 {
     display: block;
+    text-align: center;
   }
 }
 
@@ -1640,6 +1641,8 @@ main section.figure div.title span {
 @media screen and (max-width: 575px) {
   main section.figure div.title span {
     display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 

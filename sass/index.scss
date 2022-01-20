@@ -306,12 +306,15 @@ main{
                 }
                 @media screen and(max-width:$mq4){
                     display: block;
+                    text-align: center;
                 }
             }
             span{
                 display: none;
                 @media screen and(max-width:$mq4){
                     display: block;
+                    width: 100%;
+                    text-align: center;
                 }
             }
         }
