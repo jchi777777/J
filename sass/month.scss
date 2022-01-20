@@ -1,0 +1,516 @@
+@import "./public/_reset.scss";
+@import "./public/_variable.scss";
+@import "./public/_mixin.scss";
+@import "./public/_layout.scss";
+
+//---------------------------------
+
+@import "./modules/_header.scss";
+@import "./modules/_aside.scss";
+@import "./modules/_footer.scss";
+@import "./modules/_goTop.scss";
+
+ul.link_list li:nth-child(2){
+    border-bottom: 4px solid $pink;
+    border-top: 4px solid $pink;
+}
+
+section.banner{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-image: url(../../J/image/month_banner.jpg);
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @media screen and(max-width:$mq2) {
+        height: 300px;
+    }
+    @media screen and(max-width:$mq4) {
+        height: 250px;
+        background-attachment: scroll;
+    }
+    .banner_inner{
+        position: relative;
+        background: hsla(0, 0%, 100%, .3);
+        width: 30%;
+        border-radius: 15px;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 0;
+        text-align: center;
+        @media screen and(max-width:$mq2) {
+            width: 50%;
+        }
+        @media screen and(max-width:$mq4) {
+            width: 70%;
+        }
+        p{  
+            margin: 0 auto;
+            font-size: 45px;
+            padding: 40px 0;
+            font-weight: bold;
+            color: $white;
+            text-indent: 0;
+            text-shadow: black 1px 1px; 
+            letter-spacing: 10px;
+            @media screen and(max-width:$mq4) {
+                background-color: transparent;
+                backdrop-filter: blur(8px);
+            }
+        }
+    }
+    .banner_inner::before{
+        content: '';
+        background-image: url(../../J/image/month_banner.jpg);
+        background-position: 0;
+        background-size: cover;
+        background-attachment: fixed;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        filter: blur(10px);
+        @media screen and(max-width:$mq4) {
+            display: none;
+        }
+    }
+}
+
+section.title{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-around;
+    margin: 30px auto;
+    background-color: $pink;
+    padding: 30px;
+    border-top-right-radius:100px;
+    @media screen and(max-width:$mq2){
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    @media screen and(max-width:$mq3){
+        padding: 7px;
+    }
+    div.title_pic{
+        border: 5px solid $blue;
+        flex-basis: 30%;
+        margin-right: 30px;
+        background: white;
+        background-image: url(../../J/image/oscar_title.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media screen and(max-width:$mq2){
+            flex-basis: 100%;
+            height: 250px;
+            border-top-right-radius: 100px;
+            margin: 0 0 30px 0;
+        }
+        @media screen and(max-width:$mq4){
+            height: 200px;
+            margin: 0 0 10px 0;
+        }
+    }
+    div.title_text{
+        border-top-right-radius: 100px;
+        background-color: white;
+        border: 5px solid $blue;
+        padding: 20px 25px;
+        flex-basis: 70%;
+        @media screen and(max-width:$mq2){
+            border-top-right-radius: 0;
+            flex-basis: 100%;
+        }
+        h3{
+            color: $red;
+            margin: 10px auto;
+        }
+    }
+    
+}
+h2.best{
+    color: $red;
+    text-align: center;
+    margin: 40px auto;
+}
+h2.title_hide{
+    @media screen and(max-width:$mq2){
+        display: none;
+    }
+}
+section.movie{
+    width: 100%;
+    div.movie_still{
+        width: 95%;
+        margin: 0 auto;
+        height: 1200px;
+        display: grid;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: repeat(5,1fr);
+        grid-gap: 20px;
+        @media screen and(max-width:$mq2){
+            width: 100%;
+            grid-gap: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        @media screen and(max-width:$mq3){
+            height: 1800px;
+        }
+        @media screen and(max-width:$mq4){
+            height: 2100px;
+        }
+        div.still{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s all linear;
+            @media screen and(max-width:$mq2){
+                align-items: flex-end;
+            }
+            @media screen and(max-width:$mq4){
+                padding: 8px 0;
+                margin: 10px auto;
+            }
+            span{
+                color: $white;
+                text-shadow: 0.5px 0.5px black;
+                font-size: 35px;
+                padding: 5px;
+                text-align: center;
+                font-weight: bold;
+                opacity: 0;
+                border: 2px solid $white;
+                transition: 0.3s all linear;
+                letter-spacing: 5px;
+                @media screen and(max-width:$mq1){
+                    letter-spacing: 2px;
+                }
+                @media screen and(max-width:$mq2){
+                    opacity: 1;
+                    padding: 15px 5px;
+                    font-size: 25px;
+                    width: 100%;
+                    border: none;
+                    background-color: rgba(0, 0, 0, 0.664);
+                }
+            }
+        }
+        div.still:hover{
+            filter: grayscale(1);
+            @media screen and(max-width:$mq2){
+                filter: grayscale(0);
+            }
+        }
+        div.still:hover span{
+            backdrop-filter: blur(20px);
+            opacity: 1;
+            @media screen and(max-width:$mq2){
+                backdrop-filter: none;
+            }
+        }
+        div.still:nth-of-type(1){
+            grid-area: 1/1/3/1;
+            @include bg_img('../../J/image/movie_pic_1.jpeg',top);
+            @media screen and(max-width:$mq2){
+                flex-basis:25%;
+            }
+            @media screen and(max-width:$mq3){
+                flex-basis:100%;
+            }
+        }
+        div.still:nth-of-type(2){
+            grid-area: 1/2/1/4;
+            @include bg_img('../../J/image/movie_pic_2.jpeg',center);
+            @media screen and(max-width:$mq2){
+                flex-basis:70%;
+                flex-grow:1;
+            }
+            @media screen and(max-width:$mq3){
+                flex-basis:100%;
+            }
+        }
+        div.still:nth-of-type(3){
+            grid-area: 1/4/3/6;
+            @include bg_img('../../J/image/movie_pic_3.jpeg',bottom);
+            @media screen and(max-width:$mq2){
+                flex-basis:50%;
+                background-position: center;
+            }
+            @media screen and(max-width:$mq3){
+                flex-basis:100%;
+            }
+        }
+        div.still:nth-of-type(4){
+            grid-area: 2/2/4/4;
+            @include bg_img('../../J/image/movie_pic_6.jpeg',left);
+            @media screen and(max-width:$mq2){
+                flex-grow: 1;
+                flex-basis:45%;
+                background-position: left;
+            }
+            @media screen and(max-width:$mq3){
+                flex-basis:100%;
+            }
+        }
+        div.still:nth-of-type(5){
+            grid-area: 4/5/6/6;
+            @include bg_img('../../J/image/movie_pic_5.jpeg',center);
+            @media screen and(max-width:$mq2){
+                flex-basis: 25%;
+            }
+            @media screen and(max-width:$mq3){
+                flex-basis:100%;
+            }
+        }
+        div.still:nth-of-type(6){
+            grid-area: 3/4/4/6;
+            @include bg_img('../../J/image/movie_pic_4.jpeg',top);
+            @media screen and(max-width:$mq2){
+                flex-basis: 70%;
+                flex-grow: 1;
+            }
+            @media screen and(max-width:$mq3){
+                flex-basis:100%;
+            }
+        }
+        div.still:nth-of-type(7){
+            grid-area: 4/2/6/5;
+            @include bg_img('../../J/image/movie_pic_8.jpeg',bottom);
+            @media screen and(max-width:$mq2){
+                flex-basis: 65%;
+                flex-grow: 1;
+            }
+            @media screen and(max-width:$mq3){
+                flex-basis:100%;
+            }
+        }
+        div.still:nth-of-type(8){
+            grid-area: 3/1/6/2;
+            @include bg_img('../../J/image/movie_pic_10.jpeg',center);
+            @media screen and(max-width:$mq2){
+                flex-basis: 30%;
+            }
+            @media screen and(max-width:$mq3){
+                flex-basis:100%;
+                background-position: center 70%;
+            }
+        }
+    }
+}
+section.character{
+    width: 100%;
+    margin: 30px auto;
+    background: $grey;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    @media screen and(max-width:$mq2){  
+        flex-wrap: wrap;
+        margin: 50px auto;
+    }
+    div{
+        flex-basis: 20%;
+        margin: 0 10px;
+        height: 300px;
+        border: 5px solid rgb(167, 167, 167);
+        transition: all 0.3s linear;
+        cursor: pointer;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        @media screen and(max-width:$mq2){  
+            flex-basis: 30%;
+            margin: 10px ;
+            cursor: unset;
+        }
+        @media screen and(max-width:$mq3){  
+            flex-basis: 45%;
+        }
+        @media screen and(max-width:$mq4){  
+            flex-basis: 80%;
+        }
+        span{
+            color: $white;
+            margin: 0 auto;
+            opacity: 0;
+            transition: linear all 0.3s; 
+            text-shadow: 0.01rem 0.01rem black;
+            @media screen and(max-width:$mq2){
+                opacity: 1;
+            }
+        }
+    }
+    div.actor_title,div.actress_title{
+        background: white;
+        display: none;
+        @media screen and(max-width:$mq2){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media screen and(max-width:$mq4){
+            height: 100px;
+        }
+    }
+    div.actor_title{
+        border: $blue 5px solid;
+        color: $blue;
+    }
+    div.actress_title{
+        border: $pink 5px solid;
+        color: $pink;
+    }
+    div.actor{
+        @media screen and(max-width:$mq2){
+            border: 5px solid $blue;
+            cursor: unset;
+        }
+    }
+    div.actress{
+        @media screen and(max-width:$mq2){
+            border: 5px solid $pink;
+        }
+    }
+    div.actor:nth-of-type(2){
+        @include bg_img('../../J/image/actor_1.jpeg',center);
+        @media screen and(max-width:$mq4){
+            background-position: top 20%;
+        }
+    }
+    div.actor:nth-of-type(3){
+        @include bg_img('../../J/image/actor_2.jpeg',center);
+        @media screen and(max-width:$mq4){
+            background-position: top 20%;
+        }
+    }
+    div.actor:nth-of-type(4){
+        @include bg_img('../../J/image/actor_3.jpeg',center);
+        @media screen and(max-width:$mq4){
+            background-position: top 20%;
+        }
+    }
+    div.actor:nth-of-type(5){
+        @include bg_img('../../J/image/actor_4.jpeg',center);
+        @media screen and(max-width:$mq4){
+            background-position: top 20%;
+        }
+    }
+    div.actor:nth-of-type(6){
+        @include bg_img('../../J/image/actor_5.jpeg',center);
+        @media screen and(max-width:$mq4){
+            background-position: top 20%;
+        }
+    }
+    div.actress:nth-of-type(2){
+        @include bg_img('../../J/image/actress_1.jpg',center);
+        @media screen and(max-width:$mq4){
+            background-position: top 20%;
+        }
+    }
+    div.actress:nth-of-type(3){
+        @include bg_img('../../J/image/actress_2.jpeg',center);
+        @media screen and(max-width:$mq4){
+            background-position: top 20%;
+        }
+    }
+    div.actress:nth-of-type(4){
+        @include bg_img('../../J/image/actress_3.jpeg',center);
+        @media screen and(max-width:$mq4){
+            background-position: top 20%;
+        }
+    }
+    div.actress:nth-of-type(5){
+        @include bg_img('../../J/image/actress_4.jpeg',center);
+        @media screen and(max-width:$mq4){
+            background-position: top 10%;
+        }
+    }
+    div.actress:nth-of-type(6){
+        @include bg_img('../../J/image/actress_5.jpeg',center);
+        @media screen and(max-width:$mq4){
+            background-position: top ;
+        }
+    }
+    div:hover span{
+        opacity: 1;
+    }
+    div.actor:hover{
+        border:12px solid $blue;
+        @media screen and(max-width:$mq2){
+            border: 5px solid $blue;
+        }
+    }
+    div.actress:hover{
+        border:12px solid $pink;
+        @media screen and(max-width:$mq2){
+            border: 5px solid $pink;
+        }
+    }
+}
+
+section.info{
+    width: 100%;
+    margin: 30px auto;
+    background-color: $green;
+    display: flex;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    div{
+        background-color: whitesmoke;
+        margin: 15px;
+        @media screen and(max-width:$mq2){
+            margin: 10px;
+        }
+    }
+    div.info_pic{
+        flex-basis: 40%;
+        @include bg_img('../../J/image/oscar_banner.jpg',center);
+        @media screen and(max-width:$mq0){
+            flex-basis: 55%;
+        }
+        @media screen and(max-width:$mq2){
+            flex-basis: 50%;
+        }
+        @media screen and(max-width:$mq3){
+            flex-basis: 100%;
+            height: 320px;
+        }
+        @media screen and(max-width:$mq4){
+            flex-basis: 100%;
+            height: 270px;
+        }
+    }
+    div.info_text{
+        flex-basis: 25%;
+        flex-grow: 1;
+        padding: 30px;
+        @media screen and(max-width:$mq0){
+            flex-basis: 100%;
+        }
+        h3{
+            color: $blue;
+            margin-bottom: 15px;
+        }
+    }
+    div.info_time{
+        flex-basis: 25%;
+        flex-grow: 1;
+        padding: 30px;
+        h4{
+            color: $red;
+            display: inline-block;
+            margin: 15px 0;
+        }
+        p{
+            display: inline;
+        }
+    }
+}

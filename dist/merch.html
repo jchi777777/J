@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Stan-電影周邊</title>
+    <link rel="shortcut icon" href="../../J/image/web_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../J/css/merch.css">
+</head>
+<body>
+    <!-- import "goTop.html" -->
+<div class="goTop">
+    <span>↑</span>
+</div>
+
+<script src="../../J/js/goTop.js"></script>
+
+<!-- import end -->
+    <!-- import "header.html" -->
+<section class="member_popup">
+    <button class="close">X</button>
+    <div class="member_container">
+        <div class="login">
+            <span class="show_Up">⇦ 沒有帳號</span>
+            <h1>會員登入</h1>
+            <input type="email"  placeholder="請輸入Email">
+            <input type="password"  placeholder="請輸入密碼">
+            <a href="#">忘記密碼？</a>
+            <button class="signIn">登入</button>
+        </div>
+        <div class="register">
+            <span class="show_In">⇦ 已有帳號</span>
+            <h1>會員註冊</h1>
+            <input type="text" placeholder="請輸入姓名">
+            <input type="email"  placeholder="請輸入Email">
+            <input type="password"  placeholder="請輸入密碼">
+            <button class="singUp">註冊</button>
+        </div>
+        <div class="filter">
+            <button class="switch">沒有帳號 ⇨</button>
+        </div>
+    </div>
+</section>
+<header>
+    <nav>
+        <a href="index.html"><img class="logo" src="../../J/image/logo.png"></a>
+        <ul class="link_list">
+            <li><a href="news.html">影壇快訊</a></li>
+            <li class="theme">主題影展
+                <a href="focus.html"><span class="first_span">人物聚焦</span></a>
+                <a href="month.html"><span class="second_span">當月影展</span></a>
+            </li>
+            <li><a href="column.html">影評專欄</a></li>
+            <li><a href="merch.html">電影周邊</a></li>
+            <li><a href="about.html">關於我們</a></li>
+        </ul>
+        <div class="nav_function">
+            <a href="#"><img class="cartBtn" src="../../J/image/cart.png"></a>
+            <a href="#"><img class="memberBtn" src="../../J/image/member.png"></a>
+        </div>
+        <div class="hamburger_box">
+            <span class="hamburger_top"></span>
+            <span class="hamburger_mid"></span>
+            <span class="hamburger_bot"></span>
+        </div>
+    </nav>
+    <ul class="hamburger_list">
+        <li><a href="news.html">影壇快訊</a></li>
+        <li><a href="focus.html">人物聚焦</a></li>
+        <li><a href="month.html">當月影展</a></li>
+        <li><a href="column.html">影評專欄</a></li>
+        <li><a href="merch.html">電影周邊</a></li>
+        <li><a href="about.html">關於我們</a></li>
+        <li><a href="#"><img src="../../J/image/cart.png"></a></li>
+        <li class="ham_mem"><a><img src="../../J/image/member.png"></a></li>
+    </ul>
+</header>
+
+<script src="../../J/js/header.js"></script>
+
+<!-- import end -->
+    <main>
+        <section class="slider_banner">
+            <div class="slider_wrapper">
+                <div class="slider_img"></div>
+                <div class="slider_img"></div>
+                <div class="slider_img"></div>
+                <div class="slider_img"></div>
+            </div>
+            <div class="slider_btn">
+                <button onclick="btnSlide(-1)">⇦</button>
+                <button onclick="btnSlide(1)">⇨</button>
+            </div>
+            <div class="slider_spot">
+                <span onclick="moveSlide(0)"></span>
+                <span onclick="moveSlide(1)"></span>
+                <span onclick="moveSlide(2)"></span>
+                <span onclick="moveSlide(3)"></span>
+            </div>
+        </section>
+        <div class="filter">
+            <ul>
+                <li>熱銷程度</li>
+                <li>價格＄＄＄</li>
+                <li>價格＄</li>
+            </ul>
+        </div>
+        <section class="goods">
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item1.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item2.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item3.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item1.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item2.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item3.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item1.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item2.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item3.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item1.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item2.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item3.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item1.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item2.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item3.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item1.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item2.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item3.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item1.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item2.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item3.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item1.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item2.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product.html">
+                    <div class="product_img">
+                        <img src="../../J/image/item3.jpg" alt="">
+                        <div class="product_info">
+                            <h3>Bandai S.H.F<br>鋼鐵人 MK50<br><span>$666</span></h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>直接購買</button>
+                        <button>加入購物車</button>
+                    </div>
+                </a>
+            </div>
+            
+        </section>
+        <!-- import "pagination.html" -->
+<section class="pagination">
+</section>
+
+<script src="../../J/js/pagination.js"></script>
+
+<!-- import end -->
+        <!-- import "explore.html" -->
+
+<section class="slider_container">
+    <h2 class="recommend">｜文章推薦｜</h2>
+    <div class="slider">
+        <div class="inner">
+            <a href="column.html">
+                <div class="inner_img inner_img_1"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《發條橘子》：當暴力無孔不入，只剩一顆腐爛的橘子</p>
+            </a>
+        </div>
+        <div class="inner">
+            <a href="column.html">
+                <div class="inner_img inner_img_2"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《從前，有個好萊塢》：導演為何要篡改歷史</p>
+            </a>
+        </div>
+        <div class="inner">
+            <a href="column.html"> 
+                <div class="inner_img inner_img_3"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《小丑》：我以為我的人生是樁悲劇</p>
+            </a>
+        </div>
+        <div class="inner">
+            <a href="column.html">
+                <div class="inner_img inner_img_4"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《艾蜜莉的異想世界》：找到那個跟你一樣的奇怪伴侶</p>
+            </a>
+        </div>
+        <div class="inner">
+            <a href="column.html">
+                <div class="inner_img inner_img_5"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《1917》：清空你的腦，把眼珠黏在無鋒的淒厲大劍上</p>
+            </a>
+        </div>
+        <div class="inner">
+            <a href="column.html">
+                <div class="inner_img inner_img_6"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《愛爾蘭人》：聽阿公如行雲流水般的講古</p>
+            </a>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="move" onclick="plusSlide(-1)" > ➜</button>
+        <button class="move" onclick="plusSlide(1)"> ➜</button>
+    </div>
+</section>
+<script src="../../J/js/explore.js"></script>
+
+<!-- import end -->
+    </main>
+
+    <!-- import "footer.html" -->
+<footer>
+    <div class="socialMedia">
+        <a href=""><img src="../../J/image/line.png" ></a>
+        <a href=""><img src="../../J/image/ig.png" ></a>
+        <a href=""><img src="../../J/image/fb.png" ></a>
+    </div>
+    <h1 class="copyRight">
+        Copyright ©2021 All Rights Reserved.
+    </h1>
+    <div class="subscribe">
+        <span>訂閱電子報</span>
+        <input type="email" placeholder="請輸入email">
+        <button type="submit">訂閱</button>
+    </div>
+</footer>
+<!-- import end -->
+
+    <script src="../../J/js/merch.js"></script>
+
+</body>
+</html>

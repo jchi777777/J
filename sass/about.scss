@@ -1,0 +1,201 @@
+@import "./public/_reset.scss";
+@import "./public/_variable.scss";
+@import "./public/_mixin.scss";
+@import "./public/_layout.scss";
+
+//---------------------------------
+
+@import "./modules/_header.scss";
+@import "./modules/_aside.scss";
+@import "./modules/_footer.scss";
+@import "./modules/_goTop.scss";
+
+
+
+main{
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  section{
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  section.intro{
+    padding: 30px;
+    background: linear-gradient($blue 30%,rgb(206, 206, 206)30% 70%,$pink 70%);
+    @media screen and(max-width:$mq3){
+      padding: 15px;
+    }
+    div.intro_text{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 40px auto;
+      width: 80%;
+      justify-content: center;
+      text-align: center;
+      background-color: $grey;
+      padding: 20px 40px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      @media screen and(max-width:$mq3){
+        margin: 15px auto;
+      }
+      h3{
+        margin: 20px 0;
+        color: $blue;
+        flex-basis: 100%;
+      }
+      p{
+        margin: 20px;
+        text-align: left;
+      }
+      .lds-heart {
+        position: relative;
+        margin: 20px;
+        width: 80px;
+        height: 80px;
+        transform: rotate(45deg);
+        transform-origin: 40px 40px;
+        @media screen and(max-width:$mq4){
+          margin: 10px;
+        }
+      }
+      .lds-heart div {
+        top: 32px;
+        left: 32px;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background: $pink;
+        animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      .lds-heart div:after,
+      .lds-heart div:before {
+        content: " ";
+        position: absolute;
+        background: $pink;
+        display: block;
+        width: 32px;
+        height: 32px;
+      }
+      .lds-heart div:before {
+        left: -24px;
+        border-radius: 50% 0 0 50%;
+      }
+      .lds-heart div:after {
+        top: -24px;
+        border-radius: 50% 50% 0 0;
+      }
+      @keyframes lds-heart {
+        0% {
+          transform: scale(0.95);
+        }
+        5% {
+          transform: scale(1.1);
+        }
+        39% {
+          transform: scale(0.85);
+        }
+        45% {
+          transform: scale(1);
+        }
+        60% {
+          transform: scale(0.95);
+        }
+        100% {
+          transform: scale(0.9);
+        }
+      }
+      @media screen and(max-width:$mq2){
+        width: 90%;
+        padding: 15px;
+      }
+      @media screen and(max-width:$mq4){
+        width: 100%;
+        padding: 10px;
+      }
+    }
+  }
+  
+  section.contact{
+    display: flex;
+    padding: 20px 20px 60px;
+    justify-content: space-around;
+    background: linear-gradient(130deg,$pink 50%,rgb(194, 194, 194) 50%);
+    @media screen and(max-width:$mq2){
+      flex-wrap: wrap;
+    }
+    @media screen and(max-width:$mq3){
+      padding:0 15px 15px;
+    }
+    div.contact_bg{      
+      flex-basis: 35%;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      @media screen and(max-width:$mq2){
+        flex-basis: 90%;
+        margin-bottom: 30px;
+      }
+      @media screen and(max-width:$mq3){
+        flex-basis: 100%;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+      }
+    }
+    form{
+      flex-basis: 60%;
+      display: flex;
+      padding: 30px ;
+      box-sizing: border-box;
+      align-content: space-around;
+      background-color: $grey;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      justify-content: center;
+      flex-wrap: wrap;
+      @media screen and(max-width:$mq2){
+        flex-basis: 90%;
+      }
+      @media screen and(max-width:$mq3){
+        padding: 15px 20px;
+        flex-basis: 100%;
+      }
+      h3{
+        flex-basis: 100%;
+        color: $blue;
+        margin: 20px auto;
+      }
+      input{
+        border: none;
+        outline: none;
+        margin: 20px auto;
+        border-bottom: 2px solid $blue;
+        flex-basis: 100%;
+        font-size: 1.6rem;
+        background-color: $grey;
+      }
+      textarea{
+        outline: none;
+        border: none;
+        font-size: 1.6rem;
+        background-color: $grey;
+        border: 2px solid $blue;
+        flex-basis: 100%;
+        margin: 20px auto;
+        height: 400px;
+        margin-bottom: 10px;
+        @media screen and(max-width:$mq3){
+          height: 300px;
+        }
+      }
+      button{
+        @include button_trans;
+        margin: 20px auto 10px;
+      }
+      button:hover{
+        @include button_hover;
+      }
+    }
+  }
+}

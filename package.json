@@ -1,0 +1,22 @@
+{
+  "name": "j",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "git": "^0.1.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp-file-include": "^2.3.0",
+    "gulp-html-import": "0.0.2",
+    "gulp-html-imports": "^1.0.6",
+    "sass": "^1.38.1"
+  }
+}

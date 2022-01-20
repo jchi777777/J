@@ -1,0 +1,330 @@
+@import "./public/_reset.scss";
+@import "./public/_variable.scss";
+@import "./public/_mixin.scss";
+@import "./public/_layout.scss";
+
+//---------------------------------
+
+@import "./modules/_header.scss";
+@import "./modules/_aside.scss";
+@import "./modules/_footer.scss";
+@import "./modules/_explore.scss";
+@import "./modules/_goTop.scss";
+
+ul.link_list li:nth-child(1){
+    border-bottom: 4px solid $pink;
+    border-top: 4px solid $pink;
+}
+
+main{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    section.tab_block{
+        box-sizing: border-box;
+        width: 90%;
+        margin: 30px auto;
+        @media screen and(max-width:$mq0){
+            width: 100%;
+        }
+        @media screen and(max-width:$mq2){
+            width: 100%;
+            margin: 0 auto;
+        }
+        div.tab_still{
+            margin: 0 auto;
+            box-sizing: border-box;
+            height: 720px;
+            width: 95%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            @include img_animate;
+            background-size: cover;
+            background-position:top;
+            @media screen and(max-width:$mq0){
+                width: 100%;
+                height: 550px;
+            }
+            @media screen and(max-width:$mq2){
+                height: 450px;
+            }
+            @media screen and(max-width:$mq3){
+                height: 360px;
+            }
+            @media screen and(max-width:$mq4){
+                height: 240px;
+            }
+            div.intro{
+                overflow: hidden;
+                position: absolute;
+                transform: translateY(58%);
+                transition: linear all 0.3s;
+                width: 50%;
+                border-radius: 0 100% 0 0;
+                background-color: rgba(0, 0, 0, 0.8);
+                bottom: 0;
+                padding: 3rem 4rem 2rem;
+                color: $white;
+                cursor: pointer;
+                z-index: 3;
+                @media screen and(max-width:$mq2){
+                    width: 100%;
+                    transform:unset;
+                    border-radius: unset;
+                    cursor: none;
+                    padding: 0 2rem ;
+                }
+                h2{
+                    margin: 25px auto;
+                    @media screen and(max-width:$mq3){
+                        margin: 15px auto 10px;
+                    }
+                }
+                h3,h4{
+                    margin: 15px auto;
+                    @media screen and(max-width:$mq4){
+                        margin: 10px auto 5px;
+                    }
+                }
+                h3{
+                    @media screen and(max-width:$mq4){
+                        font-size: 1.5rem;
+                    }
+                }
+                h2,h4{
+                    @media screen and(max-width:$mq2){
+                        display: none;
+                    }
+                }
+            }
+            div.intro:hover{
+                transform: translateY(0);
+            }
+        }
+        div.still_1{
+            border: 15px solid #d6938d;
+            background-image: url(../../J/image/news_poster_1.jpeg);
+            @media screen and(max-width:$mq2){
+                border: none;
+            }
+        }
+        div.still_2{
+            border: 15px solid #798E9C;
+            background-image: url(../../J/image/news_poster_2.jpeg);
+            @media screen and(max-width:$mq2){
+                border: none;
+            }
+        }
+        div.still_3{
+            border: 15px solid rgb(161, 161, 161);
+            background-image: url(../../J/image/news_poster_3.jpeg);
+            @media screen and(max-width:$mq2){
+                border: none;
+            }
+        }
+        div.tabButton{
+            width: 95%;
+            margin: 30px auto 0;
+            box-sizing: border-box;
+            display: flex;
+            @media screen and(max-width:$mq0){
+                width: 100%;
+            }
+            @media screen and(max-width:$mq2){
+                margin: 0 auto ;
+            }
+            button{
+                box-sizing: border-box;
+                flex-basis: 40%;
+                @include button_trans;
+                padding: 20px;
+                color: whitesmoke;
+                font-weight: bolder;
+                text-shadow: 0.1px 0.1px black;
+                font-size: 20px;
+                border: none;
+            }
+            button:nth-of-type(1){
+                background-color: $pink;
+            }
+            button:nth-of-type(2){
+                background-color: $green;
+            }
+            button:nth-of-type(3){
+                background-color: rgb(161, 161, 161);
+            }
+            button.active{
+                flex-basis: 100%;
+            }
+        }
+        div.tab_content{
+            width: 95%;
+            box-sizing: border-box;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            overflow: hidden;
+            border: solid 25px;
+            z-index: 0;;
+            justify-content: space-between;
+            @include img_animate;
+            @media screen and(max-width:$mq0){
+                width: 100%;
+                border: solid 15px;
+            }
+            @media screen and(max-width:$mq2){
+                width: 100%;
+                border: solid 10px;
+            }
+            @media screen and(max-width:$mq3){
+                width: 100%;
+                border: solid 5px;
+            }
+            div.plot{
+                flex-basis: 100%;
+                padding: 0;
+                margin-top: 10px;
+                padding: 0 15px 15px;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                h4{
+                    color: $red;
+                    flex-basis: 100%;
+                    font-weight: bolder;
+                    padding-bottom: 15px;
+                    margin: 15px;
+                    border-bottom: 3px solid $red;
+                }
+                div{
+                    flex-basis: 30%;
+                    padding: 15px 20px;
+                    text-align: left;
+                    display: flex;
+                    flex-wrap:wrap ;
+                    align-content: center;
+                    position: relative;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                    @media screen and(max-width:$mq2){
+                        flex-basis: 100%;
+                        margin-bottom: 20px;
+                    }
+                    img{
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        width: 40px;
+                    }
+                    h3{
+                        color: $blue;
+                        flex-basis: 100%;
+                        margin: 15px auto;
+                        border-bottom: none;
+                    }
+                    h4{
+                        color: black;
+                        padding: 0;
+                        border-bottom: none;
+                        margin: 15px auto;
+                        @media screen and(max-width:$mq3){
+                            margin: 10px auto;
+                        }
+                    }
+                    h5{
+                        color: $green;
+                    }
+                }
+                p{
+                    flex-basis: 65%;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                    text-align: left;
+                    margin: 0;
+                    padding:15px 20px;
+                    @media screen and(max-width:$mq2){
+                        flex-basis: 100%;
+                    }
+                    @media screen and(max-width:$mq3){
+                        padding:15px;
+                    }
+                }
+                
+            }
+            div.media_block{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 15px 15px;
+                justify-content: space-around;
+                align-items: flex-start;
+                text-align: center;
+                div{
+                    box-sizing: border-box;
+                    h4{
+                        color: $red;
+                        margin-bottom: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 3px solid $red;
+                    }
+                }
+                .teaser{
+                    flex-basis: 65%;
+                    @media screen and(max-width:$mq2){
+                        flex-basis: 100%;
+                    }  
+                    video{
+                        width:100%;
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                    }
+                }
+                .poster{
+                    flex-basis: 30%;
+                    @media screen and(max-width:$mq2){
+                        flex-basis: 100%;
+                    }
+                    h4{
+                        margin-top: 10px;
+                    }
+                    div{
+                        width: 100%;
+                        @media screen and(max-width:$mq3){
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            align-content: flex-start;
+                        }
+                        img{
+                            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                            margin:10px auto ;
+                            width: 100%;
+                            @media screen and(max-width:$mq4){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                img.poster_hide{
+                    display: none;
+                    width: 98%;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                    margin:10px auto ;
+                    @media screen and(max-width:$mq4){
+                        display: block;
+                    }
+                }
+                img.hide_poster{
+                    display: none;
+                    width: 98%;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                    margin:10px auto ;
+                    @media screen and(max-width:$mq4){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

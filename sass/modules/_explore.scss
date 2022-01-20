@@ -1,0 +1,119 @@
+section.slider_container{
+    box-sizing: border-box;
+    max-width: 1370px;
+    margin: 70px auto 0;
+    padding-top: 20px;
+    overflow: hidden;
+    @media screen and (max-width:$mq0) {
+        width: 1170px;
+    }
+    @media screen and (max-width:$mq1) {
+        width: 960px;
+    }
+    @media screen and (max-width:$mq2) {
+        width: 730px;
+        margin: 40px auto 0;
+    }
+    @media screen and (max-width:$mq3) {
+        width: 450px;
+        margin: 30px auto 0;
+    }
+    @media screen and (max-width:$mq4) {
+        width: 340px;
+        margin: 20px auto 0;
+    }
+    h2.recommend{
+        color: $red;
+        margin-bottom: 30px;
+    }
+    div.slider{
+        width: 4000px;
+        transition: 0.3s linear;
+        box-sizing: border-box;
+        div.inner{
+            box-sizing: border-box;
+            float: left;
+            width: 305px;
+            margin: 0 20px;
+            @media screen and (max-width:$mq0) {
+                width: 350px;
+            }
+            @media screen and (max-width:$mq1) {
+                width: 280px;
+            }
+            @media screen and (max-width:$mq2) {
+                width: 320px;
+            }
+            @media screen and (max-width:$mq3) {
+                width: 400px;
+            }
+            @media screen and (max-width:$mq4) {
+                width: 310px;
+            }
+            div.inner_img{
+                margin: 0 auto;
+                width: 100%;
+                height: 180px;
+                background-color: black;
+                background-position: center;
+                background-size: cover;
+                @media screen and (max-width:$mq3) {
+                    height: 230px;
+                }
+                @media screen and (max-width:$mq3) {
+                    height: 215px;
+                }
+            }
+            .inner_img_1{
+                background-image: url(../../J/image/critic4.jpg);
+            }
+            .inner_img_2{
+                background-image: url(../../J/image/critic_6.jpg);
+            }
+            .inner_img_3{
+                background-image: url(../../J/image/critic_8.jpg);
+            }
+            .inner_img_4{
+                background-image: url(../../J/image/critic_15.jpeg);
+            }
+            .inner_img_5{
+                background-image: url(../../J/image/critic_1.jpg);
+            }
+            .inner_img_6{
+                background-image: url(../../J/image/critic_3.jpg);
+            }
+            hr{
+                height: 2px;
+                border: unset;
+                background: $blue;
+                margin: 15px auto;
+            }
+            h4{
+                color: $blue;
+                margin: 10px auto;
+            }
+            p{
+                text-indent: 0;
+                margin: 10px auto;
+                font-weight: bolder;               
+            }
+        }
+    }
+    div.buttons{
+        width: 100%;
+        text-align: center;
+        button{
+            margin: 40px 60px;
+            font-size: 28px;
+            color: $blue;
+            font-weight: bolder;
+            border-radius: 5px;
+            @media screen and(max-width:$mq4){
+                margin: 15px 20px;
+            }
+        }
+        button:nth-of-type(1){
+            transform: rotate(180deg);
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@mixin button_trans {
+    transition: linear all 0.3s;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: $blue;
+    font-size: 18px;
+    font-weight: bolder;
+    outline: none;
+    border: 2px solid $blue;
+    padding: 5px 10px;
+    
+}
+@mixin button_hover{
+    background-color: $blue;
+    color:$white;
+}
+
+@mixin title_box {
+    width:95%;
+    margin: $index_margin;
+    @media screen and (max-width:$mq3){
+        width: 100%;
+    }
+}
+
+@mixin title_line {
+    width: 100%;
+    padding: 5px 0;
+    background-color: $blue;
+    box-shadow: $pink inset 0 -8px ;
+}
+
+@mixin title_text{
+    color: $blue;
+    font-size: 32px;
+    margin-left: 50px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: white;
+    @media screen and (max-width:$mq3){
+        font-size: 28px;
+        padding: 8px 12px;
+        margin-left: 40px;
+    }
+    @media screen and (max-width:$mq4){
+        font-size: 24px;
+        padding: 6px 12px;
+        margin-left: 30px;
+    }
+}
+@mixin backImage{
+    max-width: 100%;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin index_text{
+    padding: 15px;
+    font-weight: bold;
+    line-height: 1.6em;
+    letter-spacing: 2px;
+    background-color: $bgGrey;
+    font-size: $text;
+    border: 4px solid $blue;
+    a{
+        color: $pink;
+        text-decoration: unset;
+    }
+}
+
+@mixin img_shadow{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+@mixin img_animate{
+    @keyframes img_animation {
+        0%{
+            filter: blur(5px);
+            opacity: 0;
+        }
+        100%{
+            filter: blur(0);
+            opacity: 1;
+        }
+    }
+    animation: img_animation 0.3s ease-out ;
+}
+
+@mixin marquee_animation($basis){
+    @keyframes marquee {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-($basis * 8));
+        }
+    }
+}
+
+@mixin bg_img($url,$pos){
+    background-image: url($url);
+    background-position: ($pos);
+    background-size: cover;
+}
+
+@mixin more_btn{
+    color:$blue;
+    background-color: whitesmoke;
+    padding: 0.5em 0.6em 0.5em 0.8em;
+    border: 2px solid $blue;
+    width:100px;
+    text-align: center;
+    transition: 0.2s all linear;
+}
+
+@mixin more_hover{
+    background-color: $blue;
+    color: whitesmoke;
+}

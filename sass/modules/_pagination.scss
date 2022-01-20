@@ -1,0 +1,25 @@
+section.pagination{
+    width: 60%;
+    margin: 30px auto;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        padding-left: 0;
+        li.page_item{
+            color: $blue;
+            padding: 5px 10px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        li.page_item:nth-of-type(2){
+            background-color: $blue;
+            color: $white;
+        }
+        li.page_item:hover{
+            background-color: $blue;
+            color: $white;
+        }
+    }
+}

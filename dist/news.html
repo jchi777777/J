@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Stan-影壇快訊</title>
+    <link rel="stylesheet" href="../../J/css/news.css">
+    <link rel="shortcut icon" href="../../J/image/web_logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/91b227169f.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- import "goTop.html" -->
+<div class="goTop">
+    <span>↑</span>
+</div>
+
+<script src="../../J/js/goTop.js"></script>
+
+<!-- import end -->
+    <!-- import "header.html" -->
+<section class="member_popup">
+    <button class="close">X</button>
+    <div class="member_container">
+        <div class="login">
+            <span class="show_Up">⇦ 沒有帳號</span>
+            <h1>會員登入</h1>
+            <input type="email"  placeholder="請輸入Email">
+            <input type="password"  placeholder="請輸入密碼">
+            <a href="#">忘記密碼？</a>
+            <button class="signIn">登入</button>
+        </div>
+        <div class="register">
+            <span class="show_In">⇦ 已有帳號</span>
+            <h1>會員註冊</h1>
+            <input type="text" placeholder="請輸入姓名">
+            <input type="email"  placeholder="請輸入Email">
+            <input type="password"  placeholder="請輸入密碼">
+            <button class="singUp">註冊</button>
+        </div>
+        <div class="filter">
+            <button class="switch">沒有帳號 ⇨</button>
+        </div>
+    </div>
+</section>
+<header>
+    <nav>
+        <a href="index.html"><img class="logo" src="../../J/image/logo.png"></a>
+        <ul class="link_list">
+            <li><a href="news.html">影壇快訊</a></li>
+            <li class="theme">主題影展
+                <a href="focus.html"><span class="first_span">人物聚焦</span></a>
+                <a href="month.html"><span class="second_span">當月影展</span></a>
+            </li>
+            <li><a href="column.html">影評專欄</a></li>
+            <li><a href="merch.html">電影周邊</a></li>
+            <li><a href="about.html">關於我們</a></li>
+        </ul>
+        <div class="nav_function">
+            <a href="#"><img class="cartBtn" src="../../J/image/cart.png"></a>
+            <a href="#"><img class="memberBtn" src="../../J/image/member.png"></a>
+        </div>
+        <div class="hamburger_box">
+            <span class="hamburger_top"></span>
+            <span class="hamburger_mid"></span>
+            <span class="hamburger_bot"></span>
+        </div>
+    </nav>
+    <ul class="hamburger_list">
+        <li><a href="news.html">影壇快訊</a></li>
+        <li><a href="focus.html">人物聚焦</a></li>
+        <li><a href="month.html">當月影展</a></li>
+        <li><a href="column.html">影評專欄</a></li>
+        <li><a href="merch.html">電影周邊</a></li>
+        <li><a href="about.html">關於我們</a></li>
+        <li><a href="#"><img src="../../J/image/cart.png"></a></li>
+        <li class="ham_mem"><a><img src="../../J/image/member.png"></a></li>
+    </ul>
+</header>
+
+<script src="../../J/js/header.js"></script>
+
+<!-- import end -->
+    <main>
+        <!-- tab頁籤----------->
+        <section class="tab_block">
+            <!-- tab頁籤內容----------->
+            <div class="tab_still still_1" id="still1">
+                <div class="intro">
+                    <h2>院線熱映</h2>
+                    <h3>沙丘&nbsp&nbspDune</h3>
+                    <h4>丹尼維勒納夫&nbsp&nbspDenis Villeneuve</h4>
+                    <h4>2021年・科幻／劇情片</h4>
+                </div>
+            </div>
+            <div class="tab_still still_2" id="still2">
+                <div class="intro">
+                    <h2>院線熱映</h2>
+                    <h3>法蘭西特派週報&nbsp&nbspFrench Dispatch</h3>
+                    <h4>魏斯安德森&nbsp&nbspWes Anderson</h4>
+                    <h4>2021年・劇情／喜劇片</h4>
+                </div>
+            </div>
+            <div class="tab_still still_3" id="still3">
+                <div class="intro">
+                    <h2>院線熱映</h2>
+                    <h3>美國女孩&nbsp&nbspAmerican Girl</h3>
+                    <h4>阮鳳儀</h4>
+                    <h4>2021年・劇情片</h4>
+                </div>
+            </div>
+            <!-- tab頁籤按鈕----------->
+            <div class="tabButton">
+                <button class="tab_btn active" onclick="tabContent(event,'still1','content1','#d6938d')">沙丘<br>Dune</button>
+                <button class="tab_btn" onclick="tabContent(event,'still2','content2','#798E9C')">法蘭西特派週報<br>French Dispatch</button>
+                <button class="tab_btn" onclick="tabContent(event,'still3','content3','rgb(161, 161, 161)')">美國女孩<br>American Girl</button>
+            </div>
+            <!-- tab頁籤內容----------->
+            <!-- 頁籤一 -->
+            <div class="tab_content" id="content1">
+                <div class="plot">
+                    <h4><i class="far fa-edit"></i>&nbsp電影介紹</h4>
+                    <div>
+                        <img src="../../J/image/protect.png" alt="">
+                        <h3>沙丘<br>Dune</h3>
+                        <h4>上映日期：2021-09-16</h4>
+                        <h4>片長：02時35分</h4>
+                        <h4>導演：</h4>
+                        <h5>丹尼維勒納夫(Denis Villeneuve)</h5>
+                        <h4>演員：</h4>
+                        <h5>提摩西夏勒梅(Timothée Chalamet)、奧斯卡伊薩克(Oscar Isaac)、辛蒂亞(Zendaya)</h5>
+                    </div>
+                    <p>
+                        《沙丘》講述一個神祕又性格強烈的英雄之心路歷程，本片講述保羅亞崔迪的故事，他是一個聰明又富有天賦的年輕人，肩負超越自己理解的偉大天命，且必須遠行至宇宙中最危險的行星，以確保他家人及族人未來的延續。敵對勢力為搶奪唯有此行星才出產的珍貴資源大打出手，而這也是人類最珍視的資源，一種能解鎖人類偉大潛能的物質，唯有能戰勝自己恐懼的人才能存活。
+                        本片主要演員包括曾被奧斯卡提名的提摩西夏勒梅（《以你的名字呼喚我》、《她們》）、蕾貝卡弗格森（《安眠醫生》、《不可能的任務：全面瓦解》）、奧斯卡伊薩克（《星際大戰》系列電影）、曾被奧斯卡提名的喬許布洛林（《自由大道》、《復仇者聯盟：無限之戰》）、史戴倫史柯斯嘉（HBO的《核爆家園》、《復仇者聯盟2：奧創紀元》）、戴夫巴帝斯塔（《星際異攻隊》系列、《復仇者聯盟：終局之戰》）、史蒂芬麥金利亨德森（《心靈圍籬》、《淑女鳥》）、千黛亞（《蜘蛛人：返校日》、HBO的《亢奮》）、大衛達斯馬齊連（《銀翼殺手2049》、《黑暗騎士》）、張震（《龍先生》、《臥虎藏龍》）、莎朗鄧肯布魯斯特（《星際大戰外傳：俠盜一號》、Netflix的《性愛自修室》），以及曾被奧斯卡提名的夏綠蒂蘭普琳（《45年》、《刺客教條》），傑森摩莫亞（《水行俠》、HBO的《權力遊戲》），及奧斯卡得主哈維爾巴登（《險路勿近》、《007：空降危機》）。
+                    </p>
+                </div>
+                <div class="media_block">
+                    <div class="teaser">
+                        <h4><i class="fas fa-film"></i>&nbsp精彩預告</h4>
+                        <video controls src="../../J/video/index_video.mp4"></video>
+                    </div>
+                    <div class="poster">
+                        <h4><i class="far fa-image"></i>&nbsp相關劇照</h3>
+                            <div>
+                                <img src="../../J/image/news_still_1.jpeg" alt="">
+                                <img src="../../J/image/news_still_4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <img class="hide_poster" src="../../J/image/news_still_1.jpeg" alt="">
+                    <img class="hide_poster" src="../../J/image/news_still_4.jpg" alt="">
+                </div>
+                <!-- 頁籤二 -->
+                <div class="tab_content" id="content2">
+                    <div class="plot">
+                        <h4><i class="far fa-edit"></i>&nbsp電影介紹</h4>
+                        <div>
+                            <img src="../../J/image/protect.png" alt="">
+                            <h3>法蘭西特派週報<br>The French Dispatch</h3>
+                            <h4>上映日期：2021-12-10</h4>
+                            <h4>片長：01時48分</h4>
+                            <h4>導演：</h4>
+                            <h5>魏斯安德森(Wes Anderson)</h5>
+                            <h4>演員：</h4>
+                            <h5>班尼西歐迪特洛(Benicio Del Toro)、安卓亞布洛迪(Adrien Brody)、蒂妲絲雲頓(Tilda Swinton)</h5>
+                        </div>
+                        <p>
+                            《法蘭西特派週報》故事描述在虛構的20世紀，一家駐法國城市的美國雜誌社，將一段又一段的精采故事放送給世人。該片為好萊塢獨樹一格的風格名導威斯安德森所執導的第十部電影鉅作，每次出手便成為影壇經典，其獨特的拍攝手法及風格演繹，往往都能號召一票巨星前來朝聖，傾力演出安德森所塑造的奇特角色；新作同樣吸引大咖影星加入，包含新生代人氣小生—提摩西夏勒梅、金獎影后—法蘭西絲麥朵曼、金獎影帝—安卓亞布洛迪、金獎得主—蒂妲絲雲頓、金獎得主—班尼西歐戴托羅、金球獎影帝—比爾莫瑞，及金球獎提名—歐文威爾森等，勢必成為年度獎季的熱門鉅作！
+                            威斯本人則親自在「故事結構篇」中說明電影中的故事結構，令影迷隨時隨地都能上大師講堂，點出本片就是由「故事合輯、《紐約客》雜誌和法國片」三項元素集結而成，並在製片、卡司、攝影師的聯合講解下，解密片中的三段故事的象徵意涵，包括金獎天后蒂妲史雲頓飾演的作者所寫關於天才藝術家囚犯和變成他經紀人的獄友、甜茶和三屆奧斯卡影后法蘭西絲麥朵曼重現1960年代法國學運的知性浪漫，與令人食指大動的殿堂級廚藝「警式美食」結合緊張飛車警匪追緝，飾演警長的法國影帝馬修亞瑪希更將其比喻成一趟感官之旅、直呼跟嗑藥一樣迷幻！
+                        </p>
+                    </div>
+                    <div class="media_block">
+                        <div class="teaser">
+                            <h4><i class="fas fa-film"></i>&nbsp精彩預告</h4>
+                            <video controls src="../../J/video/news_video_2.mp4"></video>
+                        </div>
+                        <div class="poster">
+                            <h4><i class="far fa-image"></i>&nbsp相關劇照</h4>
+                            <div>
+                                <img src="../../J/image/news_still_5.png" alt="">
+                                <img src="../../J/image/news_still_6.jpeg" alt="">
+                            </div>
+                        </div>
+                        <img class="poster_hide" src="../../J/image/news_still_5.png" alt="">
+                        <img class="poster_hide" src="../../J/image/news_still_6.jpeg" alt="">
+                    </div>
+                    
+                </div>
+                <!-- 頁籤三 -->
+                <div class="tab_content" id="content3">
+                    <div class="plot">
+                        <h4><i class="far fa-edit"></i>&nbsp電影介紹</h4>
+                        <div>
+                            <img src="../../J/image/icon_12.png" alt="">
+                            <h3>美國女孩<br>American Girl</h3>
+                            <h4>上映日期：2021-12-03</h4>
+                            <h4>片長：01時41分</h4>
+                            <h4>導演：</h4>
+                            <h5>阮鳳儀</h5>
+                            <h4>演員：</h4>
+                            <h5>林嘉欣、莊凱勛、方郁婷</h5>
+                        </div>
+                        <p> 
+                            獲得金馬獎7項大獎提名的《美國女孩》，故事基底取材自導演的成長經驗，以母女故事為核心闡述成長中的陣痛。當年害怕失去病中母親，以最惡劣叛逆的方式與母爭執不休。當時她以為只要「拒絕長大」，就能以此「挽留」母親，讓她陪伴久一點。現今回顧，母女安在，然而情仍然糾葛如昔。這個故事是給所有深愛著、卻沒有勇氣溫柔的人。
+                            《美國女孩》以千禧年後第一個全球流行病SARS疫情為背景，設定在2003年初的新店。這一年編導阮鳳儀的母親罹患乳癌自美返台治療。剛升國一的她從美國回到台灣，被送入私立天主教女子中學。故事圍繞著飽受內憂（母親乳癌）、外患（嚴格的私立女校生活） 的青少女成長片段。
+                            《美國女孩》是編導阮鳳儀第二次以自身經歷為靈感創作，在此之前是研究所畢業製作短片《姊姊》，講述編導幼年隨母親以及妹妹移民美國的經驗。《美國女孩》將焦點放在台美兩種文化下成長的「第三文化兒童/青少年」在「被迫返家」的情境下所經歷的「逆向文化衝擊」。這種文化跳躍的經驗在全球化時代不僅越來越普遍，也是讓「家」越來越難定義的關鍵。「家」似乎無處不是，同時也處處都是。跨國流動帶來的自由，附帶的是精神上的流離失所，以及越來越模糊的身份認同。
+                        </p>
+                    </div>
+                    <div class="media_block">
+                        <div class="teaser">
+                            <h4><i class="fas fa-film"></i>&nbsp精彩預告</h4>
+                            <video controls src="../../J/video/news_video_3.mp4"></video>
+                        </div>
+                        <div class="poster">
+                            <h4><i class="far fa-image"></i>&nbsp相關劇照</h4>
+                            <div>
+                                <img src="../../J/image/news_still_9.jpeg" alt="">
+                                <img src="../../J/image/news_still_10.jpeg" alt="">
+                            </div>
+                        </div>
+                        <img class="poster_hide" src="../../J/image/news_still_9.jpeg" alt="">
+                        <img class="poster_hide" src="../../J/image/news_still_10.jpeg" alt="">
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <!-- import "explore.html" -->
+
+<section class="slider_container">
+    <h2 class="recommend">｜文章推薦｜</h2>
+    <div class="slider">
+        <div class="inner">
+            <a href="column.html">
+                <div class="inner_img inner_img_1"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《發條橘子》：當暴力無孔不入，只剩一顆腐爛的橘子</p>
+            </a>
+        </div>
+        <div class="inner">
+            <a href="column.html">
+                <div class="inner_img inner_img_2"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《從前，有個好萊塢》：導演為何要篡改歷史</p>
+            </a>
+        </div>
+        <div class="inner">
+            <a href="column.html"> 
+                <div class="inner_img inner_img_3"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《小丑》：我以為我的人生是樁悲劇</p>
+            </a>
+        </div>
+        <div class="inner">
+            <a href="column.html">
+                <div class="inner_img inner_img_4"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《艾蜜莉的異想世界》：找到那個跟你一樣的奇怪伴侶</p>
+            </a>
+        </div>
+        <div class="inner">
+            <a href="column.html">
+                <div class="inner_img inner_img_5"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《1917》：清空你的腦，把眼珠黏在無鋒的淒厲大劍上</p>
+            </a>
+        </div>
+        <div class="inner">
+            <a href="column.html">
+                <div class="inner_img inner_img_6"></div>
+                <hr>
+                <h4>【影評專欄】</h4>
+                <p>《愛爾蘭人》：聽阿公如行雲流水般的講古</p>
+            </a>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="move" onclick="plusSlide(-1)" > ➜</button>
+        <button class="move" onclick="plusSlide(1)"> ➜</button>
+    </div>
+</section>
+<script src="../../J/js/explore.js"></script>
+
+<!-- import end -->
+        </main>
+        
+        
+        
+        <!-- import "footer.html" -->
+<footer>
+    <div class="socialMedia">
+        <a href=""><img src="../../J/image/line.png" ></a>
+        <a href=""><img src="../../J/image/ig.png" ></a>
+        <a href=""><img src="../../J/image/fb.png" ></a>
+    </div>
+    <h1 class="copyRight">
+        Copyright ©2021 All Rights Reserved.
+    </h1>
+    <div class="subscribe">
+        <span>訂閱電子報</span>
+        <input type="email" placeholder="請輸入email">
+        <button type="submit">訂閱</button>
+    </div>
+</footer>
+<!-- import end -->
+        <script src="../../J/js/news.js"></script>
+        
+    </body>
+    </html>

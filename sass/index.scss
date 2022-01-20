@@ -1,0 +1,586 @@
+@import "./public/_reset.scss";
+@import "./public/_variable.scss";
+@import "./public/_mixin.scss";
+@import "./public/_layout.scss";
+
+//---------------------------------
+
+@import "./modules/_header.scss";
+@import "./modules/_aside.scss";
+@import "./modules/_footer.scss";
+@import "./modules/_goTop.scss";
+
+main{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    section.banner_slider{
+        width: 100%;
+        position: relative;
+        button.prev,button.next{
+            width: 50px;
+            padding:0 8px;
+            height: 100px;
+            position: absolute;
+            cursor: pointer;
+            transition: 0.3s all;
+            background-color: rgba(255, 255, 255, 0.3);
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+            border: none;
+            outline: unset;
+            z-index: 5;
+            @media screen and(max-width:$mq3){
+                font-size: 30px;
+                width: 40px;
+                height: 80px;
+            }
+            @media screen and(max-width:$mq3){
+                font-size: 24px;
+                width: 32px;
+                height: 50px;
+            }
+        }
+        .prev{
+            border-radius: 100px 0 0 100px;
+            left: 0;
+            top:50%;
+            transform: translateY(-50%) rotate(180deg);
+            height: 50%;
+        }
+        .next{
+            border-radius: 100px 0 0 100px;
+            top:50%;
+            right: 0;
+            transform: translateY(-50%);
+            height: 50%;
+        }
+        button:hover{
+            background-color:rgba(255, 255, 255, 0.8) ;
+        }
+        section.index_banner{
+            display: none;
+            background: black;
+            width: 100%;
+            overflow: hidden;
+            padding: 70px 0;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-end;
+            position: relative;
+            @include img_animate;
+            @media screen and(max-width:$mq0){  
+                padding: 50px 0;
+            }
+            @media screen and(max-width:$mq3){  
+                padding: 20px 0;
+            }
+            video{
+                position: absolute;
+                top: -5%;
+                left: 0;
+                width: 110%;
+                height: 110%;
+                object-fit: cover;
+                @media screen and(max-width:$mq3){  
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            h2.play{
+                position: relative;
+                z-index: 2;
+                margin: 0;
+                padding-left: 0.5em;
+                text-align: left;
+                flex-basis: 100%;
+                align-self: flex-start;
+                color: $pink;
+            }
+            div{
+                position: relative;
+                z-index: 2;   
+            }
+            div.control{
+                position: absolute;
+                left:0;  
+                bottom:0;
+                display: flex;
+                padding-left: 15px;
+                width: 100px;
+                justify-content: space-around;
+                background-color: rgba(255, 255, 255, 0.144);
+                border-right: 5px solid white;
+                @media screen and(max-width:$mq3){
+                    display: none;
+                }
+                span{
+                    flex-basis: 45%;
+                    font-size: 23px;
+                    cursor: pointer;
+                    color: rgba(255, 255, 255, 0.5);
+                    transition: 0.2s linear;
+                }
+                span:hover{
+                    color: white;
+                }
+                i{
+                    flex-basis: 40%;
+                    transition: 0.2s linear;
+                    cursor: pointer;
+                    margin-top: 4px;
+                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 26px;
+                }
+                i:hover{
+                    color: white;
+                }
+            }
+            .banner_pic{
+                flex-basis: 40%;
+                text-align: center;
+                img{
+                    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+                    width: 55%;
+                    @media screen and(max-width:$mq1){  
+                        width: 70%;
+                    }
+                    @media screen and(max-width:$mq2){
+                        width: 80%;
+                    }
+                    @media screen and(max-width:$mq3){
+                        width: 60%;
+                    }
+                }
+            }
+            .banner_info{
+                flex-basis:50%;
+                padding: 30px;
+                background-color: #ffffff69;
+                border: 5px solid rgb(58, 85, 92);
+                display: flex;
+                flex-wrap: wrap;
+                align-self: flex-end;
+                align-items: center;
+                justify-content: center;
+                box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+                @media screen and(max-width:$mq3){
+                    flex-basis: 100%;
+                    display: none;
+                }
+                h3{
+                    margin: 20px auto;
+                    flex-basis: 100%;
+                    color: whitesmoke;
+                    text-shadow: 0.05em 0.05em black;
+                    @media screen and(max-width:$mq2){
+                        display: none;
+                    }
+                }
+                p{
+                    text-shadow: 0.05em 0.05em black;
+                    color: whitesmoke;
+                }
+                a.more{
+                    @include more_btn;
+                    margin: 15px auto;
+                }
+                .more:hover{
+                    @include more_hover
+                }
+            }
+        }
+    }
+    section.figure{
+        padding: 4rem;
+        display: grid;
+        margin: 0 auto;
+        height: 1000px;
+        background: linear-gradient(to right,$green 25% , rgb(232, 232, 232) 25%);
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        justify-content: center;
+        grid-gap: 30px;
+        @media screen and(max-width:$mq0){
+            grid-gap: 20px;
+        }
+        @media screen and(max-width:$mq1){
+            grid-gap: 10px;
+        }
+        @media screen and(max-width:$mq2){
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,min-content);
+            height: unset;
+            padding: 2rem;
+        }
+        @media screen and(max-width:$mq4){
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+            justify-content: center;
+        }
+        div{
+            border: 10px solid rgb(184, 184, 184);
+            padding: 30px;
+            flex-basis: 100%;
+            @media screen and(max-width:$mq0){
+                border: 5px solid rgb(184, 184, 184);
+            }
+            @media screen and(max-width:$mq3){
+                padding: 15px;
+            }
+            @media screen and(max-width:$mq4){
+                border: unset;
+                margin-bottom: 10px;
+                box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+            }
+            h5{
+                width: 100%;
+                transition: 0.4s linear;
+                opacity: 0;
+                color: whitesmoke;
+                text-shadow: 0.01rem 0.01rem black;
+                transform: translateY(100%);
+                text-align: center;
+                padding: 2rem 0;
+                backdrop-filter: blur(2px);
+                background-color: rgba(0, 0, 0, 0.466);
+                @media screen and(max-width:$mq3){
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+        div:hover h5{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        div.square{
+            grid-area: 2/3/4/4;
+            background-image: url(../../J/image/inception1.jpeg);
+            background-size: cover;
+            background-position: bottom;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            cursor: pointer;
+            padding: 0;
+            overflow: hidden;
+            @media screen and(max-width:$mq2){
+                grid-area: 4/1/5/1;
+            }
+            @media screen and(max-width:$mq4){
+                height: 600px;
+            }
+        }
+        div.title{
+            grid-area: 1/2/1/4;
+            background-color: whitesmoke;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            @media screen and(max-width:$mq2){
+                grid-area: 1/1/2/3;
+                height: max-content;
+            }
+            h2{
+                margin: 1rem auto;
+                flex-basis: 100%;
+                text-align: right;
+                color: $red;
+            }
+            h3{
+                margin: 1rem auto;
+                color: $blue;
+            }
+        }
+        div.info{
+            grid-area: 2/2/2/3;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: center;
+            text-align: center;
+            background-color: whitesmoke;
+            @media screen and(max-width:$mq2){
+                grid-area: 2/2/3/3;
+                align-content: center;
+            }
+            h4{
+                color: $red;
+                flex-basis: 100%;
+                font-weight: bolder;
+                @media screen and(max-width:$mq2){
+                    font-size:1.65rem;
+                }
+            }
+        }
+        div.fig_pic{
+            grid-area: 1/1/3/2;
+            background-image: url(../../J/image/index_fig_5.jpeg);
+            background-position: center 20%;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            cursor: pointer;
+            overflow: hidden;
+            padding: 0;
+            @media screen and(max-width:$mq2){
+                grid-area: 2/1/3/2;
+                min-height: 400px;
+            }
+        }
+        div.still{
+            grid-area: 3/1/4/3;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:whitesmoke ;
+            @media screen and(max-width:$mq2){
+                grid-area: 3/1/4/3;
+            }
+            p{
+                margin: 0 15px;
+                a.more{
+                    @include more_btn;
+                    text-indent: 0;
+                    display: block;
+                    margin: 15px auto;
+                    text-align: center;
+                }
+                .more:hover{
+                    @include more_hover
+                }
+            }
+            img{
+                width: 40%;
+            }
+            img:nth-of-type(1){
+                display: none;
+                @media screen and(max-width:$mq0){
+                    display: flex;
+                    width: 30%;
+                }
+                @media screen and(max-width:$mq2){
+                    display: none;
+                }
+            }
+            img:nth-of-type(2){
+                @media screen and(max-width:$mq0){
+                    display: none;
+                }                
+            }
+        }
+        div.still2{
+            display: none;
+            padding: 0;
+            overflow: hidden;
+            justify-content: center;
+            align-items: flex-end;
+            cursor: pointer;
+            padding: 0;
+            overflow: hidden;
+            @media screen and(max-width:$mq2){
+                display: flex;
+                grid-area: 4/2/5/3;
+                height: 500px;
+                background-image: url(../../J/image/inter.jpg);
+                background-size: cover;
+                background-position: top;
+            }
+            @media screen and(max-width:$mq4){
+                height: 300px;
+                background-image: url(../../J/image/interstellar.jpeg);
+            }
+        }
+    }
+    
+    // -------影評專欄---------
+    section.column{
+        padding: 3rem 0;
+        background: linear-gradient(160deg,rgb(232, 232, 232) 50%,$pink 50%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        h2.column_title{
+            flex-basis: 100%;
+            color: $blue;
+            padding-left: 2rem;
+            margin-bottom: 4rem;
+        }  
+        div.column_text{
+            flex-basis: 45%;
+            padding: 2rem;
+            background-color: whitesmoke;
+            border: 10px solid $green;
+            text-align: center;
+            @media screen and(max-width:$mq0){
+                flex-basis: 46%;
+                border: 5px solid $green;
+            }
+            @media screen and(max-width:$mq2){
+                flex-basis: 90%;
+            }
+            @media screen and(max-width:$mq3){
+                flex-basis: 95%;
+                padding: 1rem;
+            }
+            img{
+                width: 90%;
+                margin: 20px auto;
+            }
+            h3{
+                color: $blue;
+                margin: 2rem ;
+                text-align: left;
+            }
+            h4{
+                margin: 2rem ;
+                text-align: left;
+                color:$red;
+                span{
+                    color: $pink;
+                    float: right;
+                }
+            }
+            p{
+                margin: 1.5rem ;
+                text-align: left;
+            }
+            a.more{
+                display: block;
+                @include more_btn;
+                margin: 10px auto;
+            }
+            .more:hover{
+                @include more_hover
+            }
+        }
+        div.poster{
+            flex-basis: 40%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            @media screen and(max-width:$mq0){
+                flex-basis: 45%;
+            }
+            @media screen and(max-width:$mq2){
+                flex-basis: 95%;
+                justify-content: space-between;
+            }
+            @media screen and(max-width:$mq3){
+                flex-basis: 100%;
+                padding:0 1rem;
+                justify-content: center;
+            }
+            @media screen and(max-width:$mq4){
+                display: none;
+            }
+            img{
+                width: 90%;
+                border:10px solid $green;
+                margin: 15px 0;
+                @media screen and(max-width:$mq0){
+                    width: 100%;
+                    border: 5px solid $green;
+                }
+                @media screen and(max-width:$mq2){
+                    width: 48%;
+                }
+                @media screen and(max-width:$mq3){
+                    width: 100%;
+                }
+            }   
+        }
+        img.hide_poster{
+            display: none;
+            border: 5px solid $green;
+            width: 90%;
+            margin: 10px auto;
+            object-fit: contain;
+            @media screen and(max-width:$mq4){
+                display: block;
+            }
+        }
+    }
+    ///////////// 跑馬燈
+    section.upcoming{
+        width: 100%;
+        padding: 50px 0;
+        background: linear-gradient($pink 10% 40%,rgb(232, 232, 232) 40% 80%,$green 80%);
+        h3{
+            border-left: rgb(232, 232, 232) solid 15px;
+            padding: 20px;
+            color: rgb(232, 232, 232);
+            text-shadow: 0.2px 0.2px black;
+            margin-bottom: 0;
+            font-size: 30px;
+        }
+        @media screen and(max-width:$mq2){
+            padding: 30px 0;
+        }
+        @media screen and(max-width:$mq3){
+            padding: 20px 0;
+        }
+        @include marquee_animation(15%);
+        div.marquee{
+            overflow: hidden;
+            width: 100%;
+            padding: 30px 0;
+            div.container{
+                display: flex;
+                animation: marquee 50s infinite linear;
+                @media screen and(max-width:$mq0){
+                    @include marquee_animation(20%);
+                }
+                @media screen and(max-width:$mq1){
+                    @include marquee_animation(20%);
+                }
+                @media screen and(max-width:$mq2){
+                    @include marquee_animation(25%);
+                }
+                @media screen and(max-width:$mq3){
+                    @include marquee_animation(30%);
+                }
+                @media screen and(max-width:$mq4){
+                    @include marquee_animation(50%);
+                }
+                .marquee_pic{
+                    padding-right: 30px;
+                    flex-basis:15%;
+                    flex-shrink: 0;
+                    @media screen and(max-width:$mq0){
+                        flex-basis:20%;
+                        padding-right: 20px;
+                    }
+                    @media screen and(max-width:$mq1){
+                        flex-basis:20%;
+                        padding-right: 20px;
+                    }
+                    @media screen and(max-width:$mq2){
+                        flex-basis:25%;
+                        padding-right: 20px;
+                    }
+                    @media screen and(max-width:$mq3){
+                        flex-basis:30%;
+                        padding-right: 10px;
+                    }
+                    @media screen and(max-width:$mq4){
+                        flex-basis:50%;
+                        padding-right: 10px;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

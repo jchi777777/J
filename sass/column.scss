@@ -1,0 +1,142 @@
+@import "./public/_reset.scss";
+@import "./public/_variable.scss";
+@import "./public/_mixin.scss";
+@import "./public/_layout.scss";
+
+//---------------------------------
+
+@import "./modules/_header.scss";
+@import "./modules/_aside.scss";
+@import "./modules/_footer.scss";
+@import "./modules/_goTop.scss";
+
+ul.link_list li:nth-child(3){
+    border-bottom: 4px solid $pink;
+    border-top: 4px solid $pink;
+}
+
+section.critism{
+    margin: 100px auto 200px;
+    width: 90%;
+    background-color: $green;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @media screen and(max-width:$mq1){
+        width: 100%;
+        margin: 50px auto 130px;
+    }
+    @media screen and(max-width:$mq3){
+        flex-wrap: wrap;
+        margin-bottom:50px;
+    }
+    @media screen and(max-width:$mq3){
+        flex-wrap: wrap;
+        margin-bottom:20px;
+    }
+    img{
+        max-width:300px;
+        transform: translateY(-60px);
+        filter: drop-shadow(-10px -10px rgb(175, 175, 175));
+        margin: 0 20px;
+        @media screen and(max-width:$mq1){
+            max-width:250px;
+        }
+        @media screen and(max-width:$mq2){
+            transform: translateY(-90px);
+        }
+        @media screen and(max-width:$mq3){
+            filter: drop-shadow(-5px -5px rgb(175, 175, 175));
+            max-width:300px;
+            transform: translateY(-30px);
+        }
+        @media screen and(max-width:$mq4){
+            max-width:200px;
+        }
+    }
+    div.critic{
+        flex-basis: 60%;
+        border: 6px solid rgb(138, 138, 138);
+        text-align: left;
+        background-color: white;
+        padding:20px 30px;
+        transform: translateY(100px);
+        @media screen and(max-width:$mq3){
+            flex-basis: 90%;
+            transform: translateY(-20px);
+        }
+        @media screen and(max-width:$mq4){
+            flex-basis: 95%;
+        }
+        h3{
+            color: $blue;
+            span{
+                color: $red;
+                padding-left: 15px;
+            }
+        }
+        p{
+            margin: 10px;
+        }
+    }
+}
+section.article_container{
+    width: 95%;
+    text-align: left;
+    margin:30px auto ;
+    padding: 10px 30px;
+    background-color: $grey;
+    box-sizing: border-box;
+    h3.title{
+        color: $red;
+        margin: 10px auto 20px;
+    }
+    @media screen and (max-width:$mq1){
+        width: 100%;
+        padding: 15px 20px;
+    }
+    @media screen and (max-width:$mq2){
+        padding: 10px;
+    }
+    article.masonry{
+        box-sizing: border-box;
+        columns: 4;
+        column-gap: 20px;
+        @media screen and (max-width:$mq0){
+            columns: 3;
+        }
+        @media screen and (max-width:$mq2){
+            columns: 2;
+        }
+        @media screen and (max-width:$mq3){
+            columns: 1;
+        }
+        div.article{
+            background-color: white;
+            box-sizing: border-box;
+            padding:10px 20px;
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            break-inside: avoid;
+            h3{
+                color: $blue;
+                text-align: left;
+                margin: 20px 0;
+            }
+            h5{
+                text-align: right;
+                color: $pink;
+            }
+            p{
+                text-align: left;
+                padding: 15px;
+            }
+            img{
+                width: 90%;
+                margin: 10px auto;
+            }
+        }        
+    }   
+}

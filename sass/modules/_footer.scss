@@ -1,0 +1,72 @@
+footer{
+    width: 100%;
+    padding: 15px 0;
+    // height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $blue;
+    @media screen and(max-width:$mq2){
+        flex-wrap: wrap;
+    }
+    div.socialMedia{
+        display: flex;
+        justify-content: space-around;
+        @media screen and(max-width:$mq4){
+            justify-content: center;
+            flex-basis: 100%;
+            margin: 15px auto;
+        }
+        a{
+            display: flex;
+            img{
+                border-radius: 50%;
+                width: 40px;
+                margin: auto 15px;
+            }
+        }
+    }
+    h1.copyRight{
+        font-size: 18px;
+        color: $white;
+        text-align: center;
+        @media screen and(max-width:$mq2){
+            flex-basis: 100%;
+            order:-1;
+            margin: 0 auto 15px;
+        }
+        @media screen and(max-width:$mq4){
+            margin: 0;
+        }
+    }
+    div.subscribe{
+        display: flex;
+        align-items: center;
+        span{
+            color:$white;
+        }
+        input{
+            border: 2px solid $white;
+            margin:  auto 5px ;
+            height: 18px;
+            border-radius: 2px;
+            outline: none;
+        }
+        button{
+            border: unset;
+            height: 24px;
+            border: 2px solid $white;
+            background-color: $blue;
+            text-align: center;
+            color: $white;
+            font-weight: bolder;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: 0.3s all linear;
+        }
+        button:hover{
+            background-color: $white;
+            color: $blue;
+        }
+    }
+}

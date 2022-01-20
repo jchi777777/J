@@ -1,0 +1,208 @@
+@import "./public/_reset.scss";
+@import "./public/_variable.scss";
+@import "./public/_mixin.scss";
+@import "./public/_layout.scss";
+
+//---------------------------------
+
+@import "./modules/_header.scss";
+@import "./modules/_aside.scss";
+@import "./modules/_footer.scss";
+@import "./modules/_explore.scss";
+@import "./modules/_goTop.scss";
+
+// --------------------------
+
+ul.link_list li:nth-child(4){
+    border-bottom: 4px solid $pink;
+    border-top: 4px solid $pink;
+}
+section.item{
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and(max-width:$mq3){
+        flex-direction: column;
+    }
+    div.item_slider{
+        padding: 20px;
+        flex-basis: 55%;
+        margin-right:30px ;
+        display: flex;
+        justify-content: space-evenly;
+        @media screen and(max-width:$mq1){
+            flex-basis: 60%;
+            padding: 0;
+            justify-content: space-between;
+            flex-wrap: wrap-reverse;
+            align-content: flex-end;
+        }
+        @media screen and(max-width:$mq3){
+            margin: 10px auto 0;
+            width: 90%;
+        }
+        div.main_pic{
+            flex-basis: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            text-align: center;
+            margin-left: 20px;
+            @media screen and(max-width:$mq1){
+                flex-basis: 100%;
+                margin: 0;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                padding: 10px 0;
+            }
+        }
+        div.thumb_pic{
+            flex-basis: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and(max-width:$mq1){
+                flex-direction: row;    
+                flex-basis: 100%;
+                justify-content: space-between;
+            }
+            img{
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.2;
+                margin:10px auto;
+                object-fit: contain;
+                @media screen and(max-width:$mq1){
+                    width: 25%;
+                }
+            }
+        }
+    }
+    div.item_info{
+        flex-basis: 45%;
+        padding: 10px;
+        @media screen and(max-width:$mq3){
+            width: 95%;
+        }
+        h2{
+            color: $blue;
+            margin: 10px auto;
+        }
+        h3{
+            color: rgb(216, 2, 2);
+            text-align: right;
+        }
+        h4.number{
+            text-align: right;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        select{
+            width: 100%;
+            font-size: 22px;
+            padding: 10px 0;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            border: solid 2px $blue;
+        }
+        div.buy_btn{
+            margin: 20px auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            button{
+                cursor: pointer;
+                border: solid 2px $blue;
+                background-color: $grey;
+                font-size: 22px;
+                padding: 10px 0;
+                color: $blue;
+                flex-basis: 49%;
+                transition: 0.2s all linear;
+            }
+            button:hover{
+                background-color: $blue;
+                color: $white;
+            }
+        }
+    }
+}
+section.brand{
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 2px solid rgb(214, 214, 214);
+    overflow: hidden;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    @media screen and(max-width:$mq2){
+        width: 95%;
+        padding: 20px;
+    }
+    @media screen and(max-width:$mq4){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h3{
+        flex-basis: 100%;
+        color: $blue;
+        padding: 0 15px 0;
+        cursor: pointer;
+        border-left: 10px solid $blue;
+        span{
+            float: right;
+            font-size: 3rem;
+            padding-right: 20px;
+            @media screen and(max-width:$mq2){
+                font-size: 2.4rem;
+            }
+        }
+    }
+    div.brand_name{
+        flex-basis: 30%;    
+        padding: 15px 30px;
+        margin: 15px 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s linear;
+        box-sizing: border-box;
+        @media screen and(max-width:$mq2){
+            flex-basis: 35%;
+            margin: 10px 0;
+        }
+        @media screen and(max-width:$mq4){
+            flex-basis: 100%;
+        }
+        h4{
+            color: $red;
+            margin: 30px auto 0;
+        }
+        p{
+            text-indent: 0;
+        }
+    }
+    div.item_pic{
+        flex-basis: 50%;
+        transition: 0.3s linear;
+        max-height: 0;
+        box-sizing: content-box;
+        overflow: hidden;
+        @media screen and(max-width:$mq4){
+            flex-basis: 100%;
+            order: 3;
+        }
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
