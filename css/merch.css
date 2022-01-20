@@ -1058,9 +1058,7 @@ section.slider_banner div.slider_btn button {
 }
 @media screen and (max-width: 767px) {
   section.slider_banner div.slider_btn button {
-    border-radius: 0;
-    padding: 15px 10px;
-    font-size: 23px;
+    display: none;
   }
 }
 section.slider_banner div.slider_btn button:nth-of-type(1) {

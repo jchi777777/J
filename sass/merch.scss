@@ -105,9 +105,7 @@ section.slider_banner{
             font-size: 25px;
         }
         @media screen and(max-width:$mq3){
-            border-radius: 0;
-            padding: 15px 10px;
-            font-size: 23px;
+           display: none;
         }
     }
     div.slider_btn button:nth-of-type(1){
