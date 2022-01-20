@@ -296,6 +296,24 @@ main{
                 margin: 1rem auto;
                 color: $blue;
             }
+            h4{
+                display: none;
+                color: $red;
+                flex-basis: 100%;
+                font-weight: bolder;
+                @media screen and(max-width:$mq2){
+                    font-size:1.65rem;
+                }
+                @media screen and(max-width:$mq4){
+                    display: block;
+                }
+            }
+            span{
+                display: none;
+                @media screen and(max-width:$mq4){
+                    display: block;
+                }
+            }
         }
         div.info{
             grid-area: 2/2/2/3;
@@ -308,6 +326,9 @@ main{
             @media screen and(max-width:$mq2){
                 grid-area: 2/2/3/3;
                 align-content: center;
+            }
+            @media screen and(max-width:$mq4){
+                display: none;
             }
             h4{
                 color: $red;
