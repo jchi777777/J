@@ -280,6 +280,15 @@ main{
                         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
                     }
                 }
+                img.poster_hide{
+                    display: none;
+                    width: 98%;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                    margin:10px auto ;
+                    @media screen and(max-width:$mq4){
+                        display: block;
+                    }
+                }
                 .poster{
                     flex-basis: 30%;
                     @media screen and(max-width:$mq2){
@@ -304,15 +313,6 @@ main{
                                 display: none;
                             }
                         }
-                    }
-                }
-                img.poster_hide{
-                    display: none;
-                    width: 98%;
-                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-                    margin:10px auto ;
-                    @media screen and(max-width:$mq4){
-                        display: block;
                     }
                 }
             }
