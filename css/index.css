@@ -184,13 +184,10 @@ a {
 }
 
 button {
-  outline: none;
   border: none;
-  cursor: pointer;
+  outline: none;
   border-radius: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  cursor: pointer;
 }
 
 div {
