@@ -1305,13 +1305,13 @@ section.movie div.movie_still {
 
 @media screen and (max-width: 767px) {
   section.movie div.movie_still {
-    height: 1800px;
+    height: 2300px;
   }
 }
 
 @media screen and (max-width: 575px) {
   section.movie div.movie_still {
-    height: 2100px;
+    height: 2500px;
   }
 }
 
