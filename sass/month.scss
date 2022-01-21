@@ -121,7 +121,7 @@ section.title{
         border-top-right-radius: 100px;
         background-color: white;
         border: 5px solid $blue;
-        padding: 20px 25px;
+        padding: 20px 22px;
         flex-basis: 70%;
         @media screen and(max-width:$mq2){
             border-top-right-radius: 0;
@@ -176,7 +176,6 @@ section.movie{
                 align-items: flex-end;
             }
             @media screen and(max-width:$mq4){
-                padding: 8px 0;
                 margin: 10px auto;
             }
             span{
