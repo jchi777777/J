@@ -627,7 +627,7 @@ header nav ul.link_list {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 @media screen and (max-width: 992px) {
@@ -637,10 +637,10 @@ header nav ul.link_list {
 }
 
 header nav ul.link_list li {
-  border-bottom: 4px solid transparent;
-  border-top: 4px solid transparent;
-  padding: 10px;
-  margin: 0 5px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  padding: 8px 10px;
+  margin: 0 6px;
   color: #1f425a;
   font-weight: bolder;
   -webkit-transition: 0.1s linear;
@@ -697,8 +697,8 @@ header nav ul.link_list li.theme:hover span {
 
 header nav ul.link_list li:hover {
   cursor: pointer;
-  border-top: 4px solid #d6938d;
-  border-bottom: 4px solid #d6938d;
+  border-left: 4px solid #d6938d;
+  border-right: 4px solid #d6938d;
 }
 
 header nav div.nav_function {

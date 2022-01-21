@@ -627,7 +627,7 @@ header nav ul.link_list {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 @media screen and (max-width: 992px) {
@@ -637,10 +637,10 @@ header nav ul.link_list {
 }
 
 header nav ul.link_list li {
-  border-bottom: 4px solid transparent;
-  border-top: 4px solid transparent;
-  padding: 10px;
-  margin: 0 5px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  padding: 8px 10px;
+  margin: 0 6px;
   color: #1f425a;
   font-weight: bolder;
   -webkit-transition: 0.1s linear;
@@ -697,8 +697,8 @@ header nav ul.link_list li.theme:hover span {
 
 header nav ul.link_list li:hover {
   cursor: pointer;
-  border-top: 4px solid #d6938d;
-  border-bottom: 4px solid #d6938d;
+  border-left: 4px solid #d6938d;
+  border-right: 4px solid #d6938d;
 }
 
 header nav div.nav_function {
@@ -1217,7 +1217,9 @@ main section.banner_slider section.index_banner video {
 main section.banner_slider section.index_banner h2.play {
   position: relative;
   z-index: 2;
-  margin: 0;
+  margin: 0 0 10px 0;
+  position: relative;
+  bottom: 10px;
   padding-left: 0.5em;
   text-align: left;
   -webkit-flex-basis: 100%;
@@ -1295,6 +1297,9 @@ main section.banner_slider section.index_banner .banner_pic {
       -ms-flex-preferred-size: 40%;
           flex-basis: 40%;
   text-align: center;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
 }
 
 main section.banner_slider section.index_banner .banner_pic img {
@@ -2093,6 +2098,12 @@ main section.upcoming h3 {
 @media screen and (max-width: 767px) {
   main section.upcoming {
     padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  main section.upcoming {
+    padding: 10px 0 20px;
   }
 }
 

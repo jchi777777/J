@@ -264,15 +264,15 @@ header{
         }
         ul.link_list{
             display: flex; 
-            margin-left: 30px;
+            margin-left: 40px;
             @media screen and (max-width:$mq2){
                 display: none;
             }
             li{
-                border-bottom: 4px solid transparent;
-                border-top: 4px solid transparent;
-                padding:  10px;
-                margin: 0 5px;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                padding: 8px 10px;
+                margin: 0 6px;
                 color: rgb(31, 66, 90);
                 font-weight: bolder;
                 transition: 0.1s linear;
@@ -314,8 +314,8 @@ header{
             }
             li:hover{
                 cursor: pointer;
-                border-top: 4px solid $pink;
-                border-bottom: 4px solid $pink;
+                border-left: 4px solid $pink;
+                border-right: 4px solid $pink;
             }
             
         }
