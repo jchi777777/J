@@ -1352,11 +1352,11 @@ section.slider_banner div.slider_wrapper div {
   height: 600px;
   border: 1px solid blanchedalmond;
   display: none;
-  -webkit-transition: 0.3s all linear;
-  -o-transition: 0.3s all linear;
-  transition: 0.3s all linear;
-  -webkit-animation: slider 0.3s linear;
-          animation: slider 0.3s linear;
+  -webkit-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+  -webkit-animation: slider 0.2s linear;
+          animation: slider 0.2s linear;
 }
 
 @media screen and (max-width: 1399px) {

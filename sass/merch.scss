@@ -51,8 +51,8 @@ section.slider_banner{
             height: 600px;
             border: 1px solid blanchedalmond;
             display: none;
-            transition: 0.3s all linear;
-            animation: slider 0.3s linear;
+            transition: 0.2s all linear;
+            animation: slider 0.2s linear;
             @media screen and(max-width:$mq0){
                 height: 500px;
             }
