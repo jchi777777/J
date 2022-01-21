@@ -144,20 +144,20 @@ main{
                 font-weight: bolder;
                 text-shadow: 0.1px 0.1px black;
                 font-size: 20px;
-                border: none;
                 outline: thin;
             }
             button:nth-of-type(1){
                 background-color: $pink;
-                outline-color: $pink;
+                border: 1px solid $pink;
             }
             button:nth-of-type(2){
                 background-color: $green;
-                outline-color: $green;
+                border: 1px solid $green;
             }
             button:nth-of-type(3){
                 background-color: rgb(161, 161, 161);
-                outline-color: rgb(161, 161, 161);
+                border: 1px solid rgb(161, 161, 161);
+                
             }
             button.active{
                 flex-basis: 100%;
