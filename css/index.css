@@ -2323,7 +2323,7 @@ main section.upcoming div.marquee div.container .marquee_pic img {
      object-fit: cover;
 }
 
-img.normal {
+.normal {
   opacity: 0;
   -webkit-transition: 0.2s linear all;
   -o-transition: 0.2s linear all;
@@ -2333,7 +2333,7 @@ img.normal {
           transform: translateY(30%);
 }
 
-img.normal.slide_ani {
+.normal.slide_ani {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);

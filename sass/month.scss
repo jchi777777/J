@@ -513,3 +513,12 @@ section.info{
         }
     }
 }
+.normal{
+    opacity: 0;
+    transition: 0.2s linear all;
+    transform: translateY(30%);
+}
+.normal.slide_ani{
+    transform: translateY(0);
+    opacity: 1;
+}
