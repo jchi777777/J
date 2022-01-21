@@ -679,12 +679,12 @@ header nav ul.link_list li.theme span {
 }
 
 header nav ul.link_list li.theme .first_span {
-  padding-top: 7px;
-  top: 112%;
+  padding-top: 10px;
+  top: 100%;
 }
 
 header nav ul.link_list li.theme .second_span {
-  top: 242%;
+  top: 253%;
 }
 
 header nav ul.link_list li.theme span:hover {
