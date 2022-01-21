@@ -1057,7 +1057,7 @@ div.goTop {
 
 div.goTop span {
   font-size: 20px;
-  padding: 10px 15px;
+  padding: 10px 13px 10px 15px;
   border: 4px solid #1f425a;
   border-radius: 50%;
   background-color: whitesmoke;
@@ -2321,4 +2321,21 @@ main section.upcoming div.marquee div.container .marquee_pic img {
           box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+img.normal {
+  opacity: 0;
+  -webkit-transition: 0.2s linear all;
+  -o-transition: 0.2s linear all;
+  transition: 0.2s linear all;
+  -webkit-transform: translateY(30%);
+      -ms-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+img.normal.slide_ani {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
