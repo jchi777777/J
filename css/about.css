@@ -615,11 +615,34 @@ header nav > a {
 
 header nav img.logo {
   max-width: 200px;
+  padding-left: 5px;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media screen and (max-width: 992px) {
+  header nav img.logo {
+    display: none;
+  }
+}
+
+header nav img.sm_logo {
+  width: 40px;
+  padding-left: 5px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media screen and (max-width: 992px) {
+  header nav img.sm_logo {
+    display: block;
+  }
 }
 
 header nav ul.link_list {
