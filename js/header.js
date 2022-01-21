@@ -4,34 +4,6 @@ const navBar = document.querySelector('header');
 const ham_mem = document.querySelector('.ham_mem');
 let thisScroll;
 let lastScroll;
-function preventDefault(e) {
-    e.preventDefault();
-}
-
-// modern Chrome requires { passive: false } when adding event
-const supportsPassive = false;
-try {
-    window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-        get: function () { supportsPassive = true; }
-    }));
-} catch(e) {}
-
-var wheelOpt = supportsPassive ? { passive: false } : false;
-var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
-
-// call this to Disable
-function disableScroll() {
-    window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-    window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-}
-
-// call this to Enable
-function enableScroll() {
-    window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
-    window.removeEventListener('touchmove', preventDefault, wheelOpt);
-}
 
 hamburger.addEventListener('click', function(){
     this.classList.toggle('change');
