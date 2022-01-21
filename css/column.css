@@ -639,13 +639,13 @@ header nav ul.link_list {
 header nav ul.link_list li {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  padding: 8px 10px;
+  padding: 8px;
   margin: 0 6px;
   color: #1f425a;
   font-weight: bolder;
-  -webkit-transition: 0.1s linear;
-  -o-transition: 0.1s linear;
-  transition: 0.1s linear;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 header nav ul.link_list li a {
@@ -1067,8 +1067,8 @@ div.goTop span {
 }
 
 ul.link_list li:nth-child(3) {
-  border-bottom: 4px solid #d6938d;
-  border-top: 4px solid #d6938d;
+  border-left: 4px solid #d6938d;
+  border-right: 4px solid #d6938d;
 }
 
 section.critism {

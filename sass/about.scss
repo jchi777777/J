@@ -10,7 +10,10 @@
 @import "./modules/_footer.scss";
 @import "./modules/_goTop.scss";
 
-
+ul.link_list li:nth-child(5){
+  border-left: 4px solid $pink;
+  border-right: 4px solid $pink;
+}
 
 main{
   width: 100%;

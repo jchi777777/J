@@ -11,8 +11,8 @@
 @import "./modules/_goTop.scss";
 
 ul.link_list li:nth-child(3){
-    border-bottom: 4px solid $pink;
-    border-top: 4px solid $pink;
+    border-left: 4px solid $pink;
+    border-right: 4px solid $pink;
 }
 
 section.critism{

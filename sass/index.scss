@@ -94,7 +94,6 @@ main{
                 position: relative;
                 z-index: 2;
                 margin: 0 0 10px 0;
-                position: relative;
                 bottom: 10px;
                 padding-left: 0.5em;
                 text-align: left;
@@ -144,7 +143,7 @@ main{
             .banner_pic{
                 flex-basis: 40%;
                 text-align: center;
-                align-self: flex-end;
+                align-self: center;
                 img{
                     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
                     width: 55%;
