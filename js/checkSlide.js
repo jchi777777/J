@@ -1,7 +1,7 @@
 function checkSlide(){
     const targets = document.querySelectorAll('.normal');
     targets.forEach(tar => {
-        const ifshow = tar.offsetTop + (tar.offsetHeight / 1.5);
+        const ifshow = tar.offsetTop + (tar.offsetHeight / 2);
         let standard = window.innerHeight + window.scrollY;
         if(standard > ifshow){
             tar.classList.add('slide_ani');
