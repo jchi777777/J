@@ -1749,20 +1749,6 @@ main section.tab_block div.tab_content div.media_block .teaser video {
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-main section.tab_block div.tab_content div.media_block img.poster_hide2 {
-  display: none;
-  width: 98%;
-  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  margin: 10px auto;
-}
-
-@media screen and (max-width: 575px) {
-  main section.tab_block div.tab_content div.media_block img.poster_hide2 {
-    display: block;
-  }
-}
-
 main section.tab_block div.tab_content div.media_block img.poster_hide {
   display: none;
   width: 98%;
@@ -1791,8 +1777,10 @@ main section.tab_block div.tab_content div.media_block .poster {
   }
 }
 
-main section.tab_block div.tab_content div.media_block .poster h4 {
-  margin-top: 10px;
+@media screen and (max-width: 992px) {
+  main section.tab_block div.tab_content div.media_block .poster h4 {
+    margin: 15px auto;
+  }
 }
 
 main section.tab_block div.tab_content div.media_block .poster div {
