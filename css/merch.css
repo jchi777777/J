@@ -353,8 +353,8 @@ body section.member_popup div.member_container div h1 {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
   color: #1f425a;
-  font-size: 30px;
   text-align: center;
+  margin: 30px auto;
 }
 
 body section.member_popup div.member_container div input {
@@ -387,10 +387,8 @@ body section.member_popup div.member_container div.login span {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 18px;
   padding: 10px;
   color: #1f425a;
-  font-weight: bolder;
   display: none;
 }
 
@@ -406,7 +404,6 @@ body section.member_popup div.member_container div.login a {
           flex-basis: 80%;
   margin: 5px 0;
   padding: 10px;
-  text-decoration: none;
   color: #d6938d;
 }
 
@@ -459,16 +456,15 @@ body section.member_popup div.member_container div.register {
 
 body section.member_popup div.member_container div.register h1 {
   color: #6e071a;
+  margin: 30px auto;
 }
 
 body section.member_popup div.member_container div.register span {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 18px;
   padding: 10px;
   color: #6e071a;
-  font-weight: bolder;
   display: none;
 }
 

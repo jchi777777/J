@@ -85,8 +85,8 @@ body{
                 h1{
                     flex-basis: 100%;
                     color: $blue;
-                    font-size: 30px;
                     text-align: center;
+                    margin: 30px auto;
                 }
                 input{
                     flex-basis: 80%;
@@ -108,10 +108,8 @@ body{
                     position: absolute;
                     top: 0;
                     left: 0;
-                    font-size: 18px;
                     padding: 10px;
                     color: $blue;
-                    font-weight: bolder;
                     display: none;
                     @media screen and(max-width:$mq4){
                         display: inline-block;
@@ -121,7 +119,6 @@ body{
                     flex-basis: 80%;
                     margin: 5px 0;
                     padding: 10px;
-                    text-decoration: none;
                     color: $pink;
                 }
                 button.signIn{
@@ -159,15 +156,14 @@ body{
                 }
                 h1{
                     color: $red;
+                    margin: 30px auto;
                 }
                 span{
                     position: absolute;
                     top: 0;
                     left: 0;
-                    font-size: 18px;
                     padding: 10px;
                     color: $red;
-                    font-weight: bolder;
                     display: none;
                     @media screen and(max-width:$mq4){
                         display: inline-block;
