@@ -364,6 +364,7 @@ body section.member_popup div.member_container div input {
   margin: 5px 0;
   border: none;
   outline: none;
+  font-size: 1.6em;
   padding: 10px;
   background-color: #dfdfdf;
 }
@@ -395,6 +396,7 @@ body section.member_popup div.member_container div.login span {
 @media screen and (max-width: 575px) {
   body section.member_popup div.member_container div.login span {
     display: inline-block;
+    cursor: pointer;
   }
 }
 
@@ -471,6 +473,7 @@ body section.member_popup div.member_container div.register span {
 @media screen and (max-width: 575px) {
   body section.member_popup div.member_container div.register span {
     display: inline-block;
+    cursor: pointer;
   }
 }
 

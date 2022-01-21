@@ -93,6 +93,7 @@ body{
                     margin: 5px 0;
                     border: none;
                     outline: none;
+                    font-size: 1.6em;
                     padding: 10px;
                     background-color: rgb(223, 223, 223);
                 }
@@ -113,6 +114,7 @@ body{
                     display: none;
                     @media screen and(max-width:$mq4){
                         display: inline-block;
+                        cursor: pointer;
                     }
                 }
                 a{
@@ -167,6 +169,7 @@ body{
                     display: none;
                     @media screen and(max-width:$mq4){
                         display: inline-block;
+                        cursor: pointer;
                     }
                 }
                 button{
