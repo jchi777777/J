@@ -67,8 +67,7 @@ window.addEventListener('resize',() => {
 
 window.addEventListener('scroll',() => {
     thisScroll = window.scrollY;
-    // && window.innerWidth > 767
-    if(thisScroll > lastScroll && thisScroll > navBar.offsetHeight){
+    if(thisScroll > lastScroll && thisScroll > navBar.offsetHeight && window.innerWidth >767 ){
         navBar.classList.add('hide_header');
     }else{
         navBar.classList.remove('hide_header');
