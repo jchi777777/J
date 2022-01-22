@@ -469,12 +469,11 @@ div.overlay{
 aside.cart_popup{
     height: 100%;
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.233);
+    background-color: rgb(219, 219, 219);
     transition: 0.2s ease-in;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     right: -100%;
-    opacity: 0;
     top: 0;
     text-align: center;
     div.cart_box{
@@ -484,9 +483,9 @@ aside.cart_popup{
         flex-wrap: wrap;
         align-items: center;
         position: relative;
-        span{
+        button{
             position: absolute;
-            padding: 30px;
+            padding: 5px;
             top: 20px;
             right: 20px;
             color: $blue;
@@ -500,9 +499,11 @@ aside.cart_popup{
             text-align: center;
         }
         img{
-            width: 70%;
+            width: 100px;
+            margin: 20px auto;
         }        
         h5{
+            flex-basis: 100%;
             margin: 20px auto;
             text-align: center;
         }

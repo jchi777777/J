@@ -957,14 +957,13 @@ div.overlay {
 aside.cart_popup {
   height: 100%;
   width: 400px;
-  background-color: rgba(0, 0, 0, 0.233);
+  background-color: #dbdbdb;
   -webkit-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
-  position: absolute;
+  position: fixed;
   z-index: 10;
   right: -100%;
-  opacity: 0;
   top: 0;
   text-align: center;
 }
@@ -989,9 +988,9 @@ aside.cart_popup div.cart_box {
   position: relative;
 }
 
-aside.cart_popup div.cart_box span {
+aside.cart_popup div.cart_box button {
   position: absolute;
-  padding: 30px;
+  padding: 5px;
   top: 20px;
   right: 20px;
   color: #1f425a;
@@ -1011,10 +1010,14 @@ aside.cart_popup div.cart_box h3 {
 }
 
 aside.cart_popup div.cart_box img {
-  width: 70%;
+  width: 100px;
+  margin: 20px auto;
 }
 
 aside.cart_popup div.cart_box h5 {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
   margin: 20px auto;
   text-align: center;
 }

@@ -61,18 +61,15 @@ const showUp = document.querySelector('.show_Up');
 
 memberBtn.addEventListener('click',() => {
     memberPopup.style.display = 'flex';
-    disableScroll();
 });
 
 memberPopup.addEventListener('click',(e) => {
     if(e.target !== memberPopup)return;
     memberPopup.style.display = 'none';
-    enableScroll();
 })
 
 closeBtn.addEventListener('click',() => {
     memberPopup.style.display = 'none';
-    enableScroll();
 });
 
 switchBtn.addEventListener('click',() => {
@@ -126,7 +123,7 @@ showUp.addEventListener('click',() => {
 const cartPopup = document.querySelector('.cart_popup');
 const cartBtn = document.querySelector('.cartBtn');
 const cartBox = document.querySelector('.cart_box');
-const cartClose = document.querySelector('.cart_box span');
+const cartClose = document.querySelector('.cart_box button');
 const overlay = document.querySelector('.overlay');
 
 cartBtn.addEventListener('click',() => {
