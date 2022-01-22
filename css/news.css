@@ -1655,9 +1655,9 @@ main section.tab_block div.tab_content div.plot div {
 
 main section.tab_block div.tab_content div.plot div img {
   position: absolute;
-  right: 15px;
-  top: 15px;
-  width: 40px;
+  right: 25px;
+  top: 25px;
+  width: 50px;
 }
 
 main section.tab_block div.tab_content div.plot div h3 {

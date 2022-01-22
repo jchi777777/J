@@ -1808,20 +1808,3 @@ section.banner_bottom {
     height: 150px;
   }
 }
-
-.normal {
-  opacity: 0;
-  -webkit-transition: 0.2s linear all;
-  -o-transition: 0.2s linear all;
-  transition: 0.2s linear all;
-  -webkit-transform: translateY(30%);
-      -ms-transform: translateY(30%);
-          transform: translateY(30%);
-}
-
-.normal.slide_ani {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
-}
