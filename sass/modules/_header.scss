@@ -450,3 +450,44 @@ header.hide_header{
     transform: translateY(-70px);
 }
 
+//購物車
+aside.cart_popup{
+    height: 100%;
+    background-color: rgb(230, 230, 230);
+    transition: 0.3s ease-in;
+    position: absolute;
+    z-index: 10;
+    right: -100%;
+    top: 0;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    h3{
+        flex-basis: 100%;
+        color: $blue;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        align-self: flex-start;
+        text-align: center;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        img{
+            width: 50%;
+        }        
+        h5{
+            margin: 20px auto;
+            text-align: center;
+        }
+    }
+}
+aside.cart_popup.cart_slide{
+    right: 0;
+}
+

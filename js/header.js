@@ -121,3 +121,11 @@ showUp.addEventListener('click',() => {
         duration:300
     });
 })
+
+//購物車lightbox
+const cartPopup = document.querySelector('.cart_popup');
+const cartBtn = document.querySelector('.cartBtn');
+
+cartBtn.addEventListener('click',() => {
+    cartPopup.classList.toggle('cart_slide');
+})
