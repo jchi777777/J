@@ -125,7 +125,13 @@ showUp.addEventListener('click',() => {
 //購物車lightbox
 const cartPopup = document.querySelector('.cart_popup');
 const cartBtn = document.querySelector('.cartBtn');
-
+const cartBox = document.querySelector('.cart_box');
+const cartClose = document.querySelector('.cart_box span');
 cartBtn.addEventListener('click',() => {
+    cartBox.classList.toggle('box_slide');
+    cartPopup.classList.toggle('cart_slide');
+})
+cartClose.addEventListener('click',() => {
+    cartBox.classList.toggle('box_slide');
     cartPopup.classList.toggle('cart_slide');
 })

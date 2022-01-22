@@ -454,41 +454,55 @@ header.hide_header{
 //購物車
 aside.cart_popup{
     height: 100%;
-    background-color: rgb(230, 230, 230);
-    transition: 0.3s ease-in;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.233);
+    transition: 0.2s ease-in;
     position: absolute;
+    backdrop-filter: blur(3px);
     z-index: 10;
-    right: -100%;
+    right: 0;
+    opacity: 0;
     top: 0;
-    width: 20%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    h3{
-        flex-basis: 100%;
-        color: $blue;
-        border-top: 1px solid grey;
-        border-bottom: 1px solid grey;
-        align-self: flex-start;
-        text-align: center;
-    }
-    div{
+    justify-content: flex-end;
+    div.cart_box{
         display: flex;
+        height: 100%;
+        width: 400px;
         justify-content: center;
+        transition: 0.3s ease-in;
+        transform: translateX(100%);
         flex-wrap: wrap;
         align-items: center;
-        width: 100%;
+        position: relative;
+        span{
+            position: absolute;
+            padding: 30px;
+            top: 20px;
+            right: 20px;
+            color: $blue;
+        }
+        h3{
+            flex-basis: 100%;
+            color: $blue;
+            padding: 30px 0;
+            border-bottom: 1px solid grey;
+            align-self: flex-start;
+            text-align: center;
+        }
         img{
-            width: 50%;
+            width: 70%;
         }        
         h5{
             margin: 20px auto;
             text-align: center;
         }
     }
+    div.cart_box.box_slide{
+        transform: translateX(0);
+    }
 }
 aside.cart_popup.cart_slide{
-    right: 0;
+    opacity: 1;
 }
 
