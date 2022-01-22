@@ -452,26 +452,35 @@ header.hide_header{
 }
 
 //購物車
+div.overlay{
+    display: none;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.336);
+}
+.overlay.overlay_show{
+    display: block;
+}
 aside.cart_popup{
     height: 100%;
-    width: 100%;
+    width: 400px;
     background-color: rgba(0, 0, 0, 0.233);
     transition: 0.2s ease-in;
     position: absolute;
-    backdrop-filter: blur(3px);
     z-index: 10;
-    right: 0;
+    right: -100%;
     opacity: 0;
     top: 0;
-    display: flex;
-    justify-content: flex-end;
+    text-align: center;
     div.cart_box{
         display: flex;
         height: 100%;
-        width: 400px;
         justify-content: center;
-        transition: 0.3s ease-in;
-        transform: translateX(100%);
         flex-wrap: wrap;
         align-items: center;
         position: relative;
@@ -498,11 +507,8 @@ aside.cart_popup{
             text-align: center;
         }
     }
-    div.cart_box.box_slide{
-        transform: translateX(0);
-    }
 }
 aside.cart_popup.cart_slide{
-    opacity: 1;
+    right: 0;
 }
 

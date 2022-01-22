@@ -127,11 +127,15 @@ const cartPopup = document.querySelector('.cart_popup');
 const cartBtn = document.querySelector('.cartBtn');
 const cartBox = document.querySelector('.cart_box');
 const cartClose = document.querySelector('.cart_box span');
+const overlay = document.querySelector('.overlay');
+
 cartBtn.addEventListener('click',() => {
-    cartBox.classList.toggle('box_slide');
-    cartPopup.classList.toggle('cart_slide');
+    cartPopup.classList.add('cart_slide');
+    overlay.classList.add('overlay_show');
 })
+
 cartClose.addEventListener('click',() => {
-    cartBox.classList.toggle('box_slide');
-    cartPopup.classList.toggle('cart_slide');
+    cartPopup.classList.remove('cart_slide');
+    overlay.classList.remove('overlay_show');
+
 })
