@@ -106,3 +106,13 @@ button{
 div{
     box-sizing: border-box;
 }
+
+@font-face{
+    font-family: "myFont";
+    src: url("../../../J/font/NotoSerifTC-Medium.otf");
+    font-display: swap;
+}
+
+body{
+    font-family: "myFont";
+}
