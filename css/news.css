@@ -1017,7 +1017,7 @@ aside.cart_popup div.cart_box img {
   margin: 20px auto;
 }
 
-aside.cart_popup div.cart_box h5 {
+aside.cart_popup div.cart_box h4 {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
