@@ -269,6 +269,7 @@ header{
         ul.link_list{
             display: flex; 
             margin-left: 40px;
+            font-family: "myFontBold";
             @media screen and (max-width:$mq2){
                 display: none;
             }

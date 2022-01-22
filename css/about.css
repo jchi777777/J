@@ -201,6 +201,12 @@ div {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "myFontBold";
+  src: url("../../../J/font/NotoSerifTC-Bold.otf");
+  font-display: swap;
+}
+
 body {
   font-family: "myFont";
 }
@@ -645,6 +651,7 @@ header nav ul.link_list {
   display: -ms-flexbox;
   display: flex;
   margin-left: 40px;
+  font-family: "myFontBold";
 }
 
 @media screen and (max-width: 992px) {

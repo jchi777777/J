@@ -112,6 +112,11 @@ div{
     src: url("../../../J/font/NotoSerifTC-SemiBold.otf");
     font-display: swap;
 }
+@font-face{
+    font-family: "myFontBold";
+    src: url("../../../J/font/NotoSerifTC-Bold.otf");
+    font-display: swap;
+}
 
 body{
     font-family: "myFont";
