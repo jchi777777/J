@@ -105,10 +105,17 @@ section.item{
             width: 100%;
             font-size: 22px;
             padding: 10px 0;
+            margin-bottom: 30px;
             text-align: center;
             cursor: pointer;
             outline: none;
             border: solid 2px $blue;
+            @media screen and(max-width:$mq3){
+                margin-bottom: 20px;
+            }
+            @media screen and(max-width:$mq3){
+                margin-bottom: 15px;
+            }
         }
         div.buy_btn{
             margin: 20px auto;
@@ -156,6 +163,7 @@ section.brand{
         flex-basis: 100%;
         color: $blue;
         padding: 0 15px 0;
+        margin-top: 30px;
         cursor: pointer;
         border-left: 10px solid $blue;
         span{

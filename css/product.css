@@ -1449,10 +1449,23 @@ section.item div.item_info select {
   width: 100%;
   font-size: 22px;
   padding: 10px 0;
+  margin-bottom: 30px;
   text-align: center;
   cursor: pointer;
   outline: none;
   border: solid 2px #1f425a;
+}
+
+@media screen and (max-width: 767px) {
+  section.item div.item_info select {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section.item div.item_info select {
+    margin-bottom: 15px;
+  }
 }
 
 section.item div.item_info div.buy_btn {
@@ -1539,6 +1552,7 @@ section.brand h3 {
           flex-basis: 100%;
   color: #1f425a;
   padding: 0 15px 0;
+  margin-top: 30px;
   cursor: pointer;
   border-left: 10px solid #1f425a;
 }
