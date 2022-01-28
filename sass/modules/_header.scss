@@ -474,6 +474,7 @@ aside.cart_popup{
     position: fixed;
     transform: translateX(100%);
     z-index: 10;
+    opacity: 0;
     right: 0;
     top: 0;
     text-align: center;
@@ -519,5 +520,6 @@ aside.cart_popup{
 }
 aside.cart_popup.cart_slide{
     transform: translateX(0);
+    opacity: 1;
 }
 
