@@ -1440,12 +1440,6 @@ section.movie div.movie_still {
   }
 }
 
-@media screen and (max-width: 575px) {
-  section.movie div.movie_still {
-    height: 2500px;
-  }
-}
-
 section.movie div.movie_still div.still {
   display: -webkit-box;
   display: -webkit-flex;

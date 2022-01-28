@@ -25,4 +25,4 @@ function moveSlide(idx){
 spots[0].click();
 const slideIt = setInterval(() => {
     slide_buttons[1].click();
-},4000)
+},2500)

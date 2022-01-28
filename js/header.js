@@ -13,8 +13,6 @@ hamburger.addEventListener('click', function(){
 
 ham_mem.addEventListener('click',() => {
     memberPopup.style.display = 'flex';
-    disableScroll();
-    
 })
 
 
