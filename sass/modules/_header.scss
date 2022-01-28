@@ -472,11 +472,14 @@ aside.cart_popup{
     transition: 0.1s linear;
     background: white;
     position: fixed;
+    transform: translateX(100%);
     z-index: 10;
     right: 0;
-    transform: translateX(100%);
     top: 0;
     text-align: center;
+    @media screen and(max-width:$mq3){
+        width: 100%;
+    }
     div.cart_box{
         display: flex;
         height: 100%;
