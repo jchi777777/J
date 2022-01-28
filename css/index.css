@@ -262,11 +262,11 @@ body section.member_popup {
 }
 
 body section.member_popup button.close {
-  font-size: 40px;
+  font-size: 35px;
   position: fixed;
   z-index: 6;
   color: whitesmoke;
-  font-weight: bolder;
+  font-weight: bold;
   text-shadow: -1px 0 grey, 0 1px grey,1px 0 grey, 0 -1px grey;
   top: 20px;
   right: 20px;
@@ -958,13 +958,13 @@ aside.cart_popup {
   height: 100%;
   width: 400px;
   border: 5px solid #dbdbdb;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
   background: white;
   position: fixed;
   z-index: 10;
-  right: -100%;
+  right: -50%;
   top: 0;
   text-align: center;
 }
@@ -992,12 +992,12 @@ aside.cart_popup div.cart_box {
 aside.cart_popup div.cart_box button {
   position: absolute;
   padding: 5px;
-  font-family: "myFontBold";
+  font-weight: bold;
   font-size: 30px;
   background: transparent;
-  top: 10px;
-  right: 10px;
-  color: #1f425a;
+  top: 5px;
+  right: 5px;
+  color: #dbdbdb;
 }
 
 aside.cart_popup div.cart_box h3 {
@@ -1006,7 +1006,7 @@ aside.cart_popup div.cart_box h3 {
           flex-basis: 100%;
   color: #1f425a;
   padding: 30px 0;
-  border-bottom: 2px solid #dbdbdb;
+  border-bottom: 5px solid #dbdbdb;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
@@ -1383,6 +1383,7 @@ main section.banner_slider section.index_banner div.control span {
       -ms-flex-preferred-size: 45%;
           flex-basis: 45%;
   font-size: 23px;
+  margin-left: 5px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.5);
   -webkit-transition: 0.2s linear;
@@ -1402,7 +1403,7 @@ main section.banner_slider section.index_banner div.control i {
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   cursor: pointer;
-  margin-top: 4px;
+  margin-top: 5px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 26px;
 }
@@ -1507,7 +1508,7 @@ main section.banner_slider section.index_banner .banner_info p {
 main section.banner_slider section.index_banner .banner_info a.more {
   color: #1f425a;
   background-color: whitesmoke;
-  padding: 0.5em 0.6em 0.5em 0.8em;
+  padding: 0.5em 0.5em 0.7em 0.7em;
   border: 2px solid #1f425a;
   width: 100px;
   text-align: center;
@@ -1893,7 +1894,7 @@ main section.figure div.still p {
 main section.figure div.still p a.more {
   color: #1f425a;
   background-color: whitesmoke;
-  padding: 0.5em 0.6em 0.5em 0.8em;
+  padding: 0.5em 0.5em 0.7em 0.7em;
   border: 2px solid #1f425a;
   width: 100px;
   text-align: center;
@@ -2080,7 +2081,7 @@ main section.column div.column_text a.more {
   display: block;
   color: #1f425a;
   background-color: whitesmoke;
-  padding: 0.5em 0.6em 0.5em 0.8em;
+  padding: 0.5em 0.5em 0.7em 0.7em;
   border: 2px solid #1f425a;
   width: 100px;
   text-align: center;

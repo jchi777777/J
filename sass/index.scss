@@ -121,6 +121,7 @@ main{
                 span{
                     flex-basis: 45%;
                     font-size: 23px;
+                    margin-left: 5px;
                     cursor: pointer;
                     color: rgba(255, 255, 255, 0.5);
                     transition: 0.2s linear;
@@ -132,7 +133,7 @@ main{
                     flex-basis: 40%;
                     transition: 0.2s linear;
                     cursor: pointer;
-                    margin-top: 4px;
+                    margin-top: 5px;
                     color: rgba(255, 255, 255, 0.5);
                     font-size: 26px;
                 }
