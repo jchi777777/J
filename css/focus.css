@@ -214,11 +214,8 @@ body {
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
   position: relative;
-  -webkit-transition: linear margin-left 0.2s;
-  -o-transition: linear margin-left 0.2s;
-  transition: linear margin-left 0.2s;
+  overflow: hidden;
 }
 
 body section.member_popup {
