@@ -1408,6 +1408,12 @@ div.goTop {
   cursor: pointer;
 }
 
+@media screen and (max-width: 575px) {
+  div.goTop {
+    right: 10px;
+  }
+}
+
 div.goTop span {
   font-size: 20px;
   padding: 10px 13px 10px 15px;
@@ -1421,7 +1427,8 @@ div.goTop span {
 
 @media screen and (max-width: 767px) {
   div.goTop span {
-    font-size: 16px;
+    font-size: 15px;
+    padding: 8px 11px 8px 13px;
   }
 }
 
