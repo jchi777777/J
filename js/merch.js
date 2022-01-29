@@ -20,7 +20,6 @@ function moveSlide(idx){
 
     spots.forEach(spot=> spot.classList.remove('showSpot'));
     spots[sliderIdx].className += ' showSpot';
-    console.log(sliderIdx);
 }
 spots[0].click();
 const slideIt = setInterval(() => {

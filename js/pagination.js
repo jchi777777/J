@@ -17,9 +17,6 @@ pagination.innerHTML = `
 
 
 
-// nav.innerHTML = html;
-// html = document.querySelector('.navigator ul').insertBefore(nav[0],nav[1]);
-
 
 
 

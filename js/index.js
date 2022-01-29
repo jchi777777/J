@@ -10,7 +10,6 @@ function showSlide(idx){
     sliderIndex = idx;
     if(sliderIndex < 0)sliderIndex = 2;
     if(sliderIndex > 2)sliderIndex = 0;
-    console.log(sliderIndex);
     banners.forEach(banner => banner.style.display = 'none');
     banners[sliderIndex].style.display = 'flex';
 }
@@ -21,7 +20,7 @@ showSlide(0);
 const index_videos = document.querySelectorAll('.index_video');
 const toggleBtns = document.querySelectorAll('.playBtn');
 const volumes = document.querySelectorAll('.control i');
-console.log(volumes);
+
 
 volumes.forEach(vol => vol.addEventListener('click',() => {
     if(index_videos[sliderIndex].muted){

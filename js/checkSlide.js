@@ -4,7 +4,6 @@ function checkSlide(){
         const standard = (window.innerHeight + window.scrollY) - tar.offsetHeight / 2.5;
         const tarBottom = tar.offsetTop + tar.offsetHeight;
         const isHalf = standard > tar.offsetTop;
-        // const isNotPast = window.scrollY < tarBottom;
         if(isHalf){
             tar.classList.add('slide_ani');
         }else{

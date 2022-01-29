@@ -24,7 +24,6 @@ function tabContent(event,top,bot,color){
     event.currentTarget.className += ' active';
     document.getElementById(bot).style.borderColor = `${color}`;
     video.forEach(v => v.pause())
-    console.log(color);
 }
 
 buttons[0].click();

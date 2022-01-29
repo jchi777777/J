@@ -18,7 +18,6 @@ ham_mem.addEventListener('click',() => {
 
 window.addEventListener('resize',() => {
     let bodyWidth = document.body.offsetWidth;
-    console.log(bodyWidth);
     
     if(bodyWidth >= 992){
         hamburger.classList.remove('change');
