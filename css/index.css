@@ -1778,6 +1778,7 @@ main section.figure div.title h4 {
   main section.figure div.title h4 {
     display: block;
     text-align: center;
+    margin-top: 20px;
   }
 }
 
@@ -1789,6 +1790,7 @@ main section.figure div.title span {
   main section.figure div.title span {
     display: block;
     width: 100%;
+    margin-bottom: 20px;
     text-align: center;
   }
 }
@@ -2030,6 +2032,12 @@ main section.column {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  main section.column {
+    padding: 2rem 0;
+  }
+}
+
 main section.column h2.column_title {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
@@ -2037,6 +2045,18 @@ main section.column h2.column_title {
   color: #1f425a;
   padding-left: 2rem;
   margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  main section.column h2.column_title {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main section.column h2.column_title {
+    margin-bottom: 2rem;
+  }
 }
 
 main section.column div.column_text {
