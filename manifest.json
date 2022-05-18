@@ -7,9 +7,14 @@
         "src": "/imgage/logo.png",
         "sizes": "192x192",
         "type": "image/png"
+      },
+      {
+        "src": "/imgage/logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
       }
     ],
     "name": "Awesome fox pictures",
     "short_name": "Foxes",
-    "start_url": "/dist/about.html"
+    "start_url": "/dist/index.html"
 }
