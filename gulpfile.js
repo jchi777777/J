@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass')); // 載入 gulp-sass 套件
-var htmlImport = require('gulp-html-imports')
+var htmlImport = require('gulp-html-imports');
 
 gulp.task('sass', () => {
   return gulp
