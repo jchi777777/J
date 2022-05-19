@@ -19,80 +19,6 @@
     <button class="install-button">Add to home screen</button>
 
 
-    <!-- import "header.html" -->
-<header>
-    <nav>
-        <a href="index.html">
-            <img class="logo" src="../../J/image/logo.png">
-        </a>
-        <ul class="link_list">
-            <li><a href="news.html">影壇快訊</a></li>
-            <li class="theme">主題影展
-                <a href="focus.html"><span class="first_span">人物聚焦</span></a>
-                <a href="month.html"><span class="second_span">當月影展</span></a>
-            </li>
-            <li><a href="column.html">影評專欄</a></li>
-            <li><a href="merch.html">電影周邊</a></li>
-            <li><a href="about.html">關於我們</a></li>
-        </ul>
-        <div class="nav_function">
-            <a href="#"><img class="cartBtn" src="../../J/image/cart.png"></a>
-            <a href="#"><img class="memberBtn" src="../../J/image/member.png"></a>
-        </div>
-        <div class="hamburger_box">
-            <span class="hamburger_top"></span>
-            <span class="hamburger_mid"></span>
-            <span class="hamburger_bot"></span>
-        </div>
-    </nav>
-    <ul class="hamburger_list">
-        <li><a href="news.html">影壇快訊</a></li>
-        <li><a href="focus.html">人物聚焦</a></li>
-        <li><a href="month.html">當月影展</a></li>
-        <li><a href="column.html">影評專欄</a></li>
-        <li><a href="merch.html">電影周邊</a></li>
-        <li><a href="about.html">關於我們</a></li>
-        <li><a href="#"><img src="../../J/image/cart.png"></a></li>
-        <li class="ham_mem"><a><img src="../../J/image/member.png"></a></li>
-    </ul>
-</header>
-<section class="member_popup">
-    <button class="close">X</button>
-    <div class="member_container">
-        <div class="login">
-            <span class="show_Up">⇦ 沒有帳號</span>
-            <h1>會員登入</h1>
-            <input type="email"  placeholder="請輸入Email">
-            <input type="password"  placeholder="請輸入密碼">
-            <a href="#">忘記密碼？</a>
-            <button class="signIn">登入</button>
-        </div>
-        <div class="register">
-            <span class="show_In">⇦ 已有帳號</span>
-            <h1>會員註冊</h1>
-            <input type="text" placeholder="請輸入姓名">
-            <input type="email"  placeholder="請輸入Email">
-            <input type="password"  placeholder="請輸入密碼">
-            <button class="singUp">註冊</button>
-        </div>
-        <div class="filter">
-            <button class="switch">沒有帳號 ⇨</button>
-        </div>
-    </div>
-</section>
-<div class="overlay"></div>
-<aside class="cart_popup">
-    <div class="cart_box">
-        <button>X</button>
-        <h3>購物車</h3>
-        <img src="../../../J/image/bag.png" >
-        <h4>購物車是空的</h4>
-    </div>
-</aside>
-
-<script src="../../J/js/header.js"></script>
-
-<!-- import end -->
     
     <!-- <main>
         <section class="intro">
@@ -124,23 +50,7 @@
         </section>
     </main> -->
     
-    <!-- import "footer.html" -->
-<footer>
-    <div class="socialMedia">
-        <a href=""><img src="../../J/image/line.png" ></a>
-        <a href=""><img src="../../J/image/ig.png" ></a>
-        <a href=""><img src="../../J/image/fb.png" ></a>
-    </div>
-    <h1 class="copyRight">
-        Copyright ©2021 All Rights Reserved.
-    </h1>
-    <div class="subscribe">
-        <span>訂閱電子報</span>
-        <input type="email" placeholder="請輸入email">
-        <button type="submit">訂閱</button>
-    </div>
-</footer>
-<!-- import end -->
+
 
     <script>
         const btnInstall = document.querySelector('.install-button');
@@ -152,12 +62,12 @@
             // Stash the event so it can be triggered later.
             installPromptEvent = event;
             // Update the install UI to notify the user app can be installed
-            document.querySelector('#install-button').disabled = false;
+            document.querySelector('.install-button').disabled = false;
         });
 
         btnInstall.addEventListener('click', () => {
         // Update the install UI to remove the install button
-            document.querySelector('#install-button').disabled = true;
+            document.querySelector('.install-button').disabled = true;
             // Show the modal add to home screen dialog
             installPromptEvent.prompt();
             // Wait for the user to respond to the prompt
