@@ -29,10 +29,10 @@
       "type": "image/png"
     }
   ],
-  "start_url": "https://www.cryptocity.tw",
+  "start_url": "https://jchi777777.github.io/J/dist/",
   "display": "fullscreen",
   "background_color": "#fff",
   "theme_color": "#fff",
-  "scope":"https://www.cryptocity.tw/",
+  "scope":"https://jchi777777.github.io/J/dist/",
   "orientation":"portrait"
 }
