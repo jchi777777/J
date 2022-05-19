@@ -70,47 +70,40 @@
         })
     }
 
-        // const btnAdd = document.querySelector('.install-button');
+    const btnAdd = document.querySelector('.install-button'); 
 
-        let deferredPrompt;
+    let deferredPrompt;
 
-
-        var isTooSoon = true;
           window.addEventListener('beforeinstallprompt', function(e) {
 
-              //e.preventDefault();
-              //e.prompt();
-              //promptEvent = e;
-              request_debug(' window.addEventListener beforeinstallprompt fired!')
+              e.preventDefault();
 
-              if (isTooSoon) {
-                //e.preventDefault(); // Prevents prompt display
-                // Prompt later instead:
-                setTimeout(function() {
-                  isTooSoon = false;
-                  e.prompt(); // Throws if called more than once or default not prevented
-                }, 4000);
-              }
+              deferredPrompt = e;
+                // Installation must be done by a user gesture! Here, the button click
+                btnAdd.addEventListener('click', (e) => {
+                // hide our user interface that shows our A2HS button
+                btnAdd.style.display = 'none';
+                // Show the prompt
+
+                deferredPrompt.prompt();
+                // Wait for the user to respond to the prompt
+                deferredPrompt.userChoice
+                    .then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the A2HS prompt');
+                    } else {
+                        console.log('User dismissed the A2HS prompt');
+                    }
+                    deferredPrompt = null;
+                    });
+                });
  
           });
 
-// Installation must be done by a user gesture! Here, the button click
-// btnAdd.addEventListener('click', (e) => {
-//   // hide our user interface that shows our A2HS button
-//   btnAdd.style.display = 'none';
-//   // Show the prompt
-//   deferredPrompt.prompt();
-//   // Wait for the user to respond to the prompt
-//   deferredPrompt.userChoice
-//     .then((choiceResult) => {
-//       if (choiceResult.outcome === 'accepted') {
-//         console.log('User accepted the A2HS prompt');
-//       } else {
-//         console.log('User dismissed the A2HS prompt');
-//       }
-//       deferredPrompt = null;
-//     });
-// });
+
+
+
+
     </script>
 </body>
 </html>
