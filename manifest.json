@@ -4,7 +4,7 @@
   "description": "Test PWA App",
   "icons": [
     {
-      "src": "/image/test_48.png",
+      "src": "../J/image/test_48.png",
       "sizes": "48x48",
       "type": "image/png"
     },
@@ -30,7 +30,7 @@
     }
   ],
   "start_url": "../J/dist/about.html",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
   "orientation":"portrait"

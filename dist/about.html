@@ -53,6 +53,13 @@
 
 
     <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+                .then(reg => console.log('註冊啦～SW registered!'))
+                .catch(err => console.log('Error!', err));
+        }
+
+
         const btnInstall = document.querySelector('.install-button');
 
        let installPromptEvent;
