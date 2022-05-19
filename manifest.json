@@ -9,27 +9,27 @@
       "type": "image/png"
     },
     {
-      "src": "/image/test_96.png",
+      "src": "../J/image/test_96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/image/test_144.png",
+      "src": "../J/image/test_144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/image/test_192.png",
+      "src": "../J/image/test_192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/image/test_512.png",
+      "src": "../J/image/test_512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "start_url": "/dist/about.html",
+  "start_url": "../J/dist/about.html",
   "background_color": "#fff",
   "theme_color": "#fff",
   "orientation":"portrait"
