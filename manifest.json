@@ -30,6 +30,7 @@
     }
   ],
   "start_url": "../J/dist/about.html",
+  "display": "fullscreen",
   "background_color": "#fff",
   "theme_color": "#fff",
   "orientation":"portrait"
