@@ -61,11 +61,14 @@
     <script src="../../J/sw.js"></script>
     <script>
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js')
-    .then(reg => console.log('註冊啦～SW registered!'))
-    .catch(err => console.log('Error!', err));
-}
+    if("serviceWorker" in navigator){
+        window.addEventListener("load", function(){
+            navigator.serviceWorker
+                .register("../../J/sw.js")
+                .then(res => console.log('registered'))
+                .catch(err => console.log(err))
+        })
+    }
 
         const btnAdd = document.querySelector('.install-button');
 

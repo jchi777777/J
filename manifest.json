@@ -33,5 +33,6 @@
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
+  "scope":"/",
   "orientation":"portrait"
 }
