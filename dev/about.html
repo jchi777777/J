@@ -58,14 +58,20 @@
     </main> -->
     
 
-
+    <script src="../../J/sw.js"></script>
     <script>
 
-
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js')
+    .then(reg => console.log('註冊啦～SW registered!'))
+    .catch(err => console.log('Error!', err));
+}
 
         const btnAdd = document.querySelector('.install-button');
 
         let deferredPrompt;
+
+
 
 window.addEventListener('beforeinstallprompt', function(event) {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
