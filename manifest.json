@@ -29,10 +29,10 @@
       "type": "image/png"
     }
   ],
-  "start_url": "../J/dist/about.html",
+  "start_url": "https://jchi777777.github.io/J/dist/",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
-  "scope":"/",
+  "scope":"https://jchi777777.github.io/J/dist/",
   "orientation":"portrait"
 }
