@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
     <title>Movie Stan - 關於我們</title>
+    
     <link rel="shortcut icon" href="../../J/image/web_logo.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="../../J/css/about.css">
-    <link rel="manifest" href="../manifest.json">
-    <meta name=”apple-mobile-web-app-capable” content=”yes”>
+    
+    <link rel="manifest" href="/manifest.json">
+
 </head>
 <body>
-    <button class="add-button">Add to home screen</button>
+    <button id="install-button">Add to home screen</button>
 
-    <!-- @import "goTop.html" -->
+
     <!-- @import "header.html" -->
     
     <!-- <main>
@@ -47,41 +52,35 @@
     </main> -->
     
     <!-- @import "footer.html" -->
+
     <script>
-        if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/pwa-examples/a2hs/sw.js").then(() => {
-    console.log("Service Worker Registered");
-  });
-}
-        let deferredPrompt;
-        const addBtn = document.querySelector('.add-button');
+       let installPromptEvent;
+       window.addEventListener('beforeinstallprompt', (event) => {
+            // Prevent Chrome <= 67 from automatically showing the prompt
+            event.preventDefault();
+            // Stash the event so it can be triggered later.
+            installPromptEvent = event;
+            // Update the install UI to notify the user app can be installed
+            document.querySelector('#install-button').disabled = false;
+        });
 
-window.addEventListener("beforeinstallprompt", (e) => {
-  // 2. 停用 Chrome 67 前的公版提示視窗
-  e.preventDefault();
-  // 3. 記得把事件存起來，後續在安裝的流程上會需要
-  deferredPrompt = e;
-  // 4. 讓 "安裝按鈕" 顯示
-  addBtn.style.display = "block";
-
-  addBtn.addEventListener("click", (e) => {
-    // 5. 點選後 "安裝按鈕" 隱藏 (也可以停用)
-    addBtn.style.display = "none";
-    // 6. 點選按鈕後才觸發提示視窗
-    deferredPrompt.prompt();
-    // 7. 等待使用者確認或拒絕
-    deferredPrompt.userChoice.then((choiceResult) => {
-      // 8. 從 userChoice 的結果判斷是否安裝成功
-      if (choiceResult.outcome === "accepted") {
-        console.log("User accepted the A2HS prompt");
-      } else {
-        console.log("User dismissed the A2HS prompt");
-      }
-      // 9. 用過就不能再用了
-      deferredPrompt = null;
-    });
-  });
-});
+        btnInstall.addEventListener('click', () => {
+        // Update the install UI to remove the install button
+            document.querySelector('#install-button').disabled = true;
+            // Show the modal add to home screen dialog
+            installPromptEvent.prompt();
+            // Wait for the user to respond to the prompt
+            installPromptEvent.userChoice.then(choice => {
+                if (choice.outcome === 'accepted') {
+                console.log('User accepted the A2HS prompt');
+                } else {
+                console.log('User dismissed the A2HS prompt');
+                }
+                // Clear the saved prompt since it can't be used again
+                installPromptEvent = null;
+            });
+        });
+  
     </script>
 </body>
 </html>
