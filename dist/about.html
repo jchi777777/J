@@ -16,7 +16,7 @@
 
 </head>
 <body>
-    <button id="install-button">Add to home screen</button>
+    <button class="install-button">Add to home screen</button>
 
 
     <!-- import "header.html" -->
@@ -143,7 +143,7 @@
 <!-- import end -->
 
     <script>
-
+        const btnInstall = document.querySelector('.install-button');
 
        let installPromptEvent;
        window.addEventListener('beforeinstallprompt', (event) => {
