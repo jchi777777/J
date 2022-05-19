@@ -30,7 +30,7 @@
     }
   ],
   "start_url": "https://jchi777777.github.io/J/dist/",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
   "scope":"https://jchi777777.github.io/J/dist/",
