@@ -1,5 +1,5 @@
 const staticDevCoffee = "dev-coffee-site-v1"
-const fileToCache = [
+const assets = [
     "../J/image/test_512.png",
     "../J/image/test_96.png"
 ]
