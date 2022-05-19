@@ -31,7 +31,6 @@
   ],
   "start_url": "/dist/about.html",
   "background_color": "#fff",
-  "scope": "/",
   "theme_color": "#fff",
   "orientation":"portrait"
 }
