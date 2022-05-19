@@ -22,10 +22,16 @@
             width: 20px;
             height: 20px;
         }
+        h1{
+            display: none;
+        }
     </style>
 </head>
 <body>
     <button class="install-button">Add to home screen</button>
+    <h1 class="hint">
+        install this webapp on your phone
+    </h1>
 
     <img src="../../J/image/actor_1.jpeg" alt="">
     <img src="../../J/image/actor_1.jpeg" alt="">
@@ -64,6 +70,20 @@
 
     <script src="../../J/sw.js"></script>
     <script>
+
+        const hint = document.querySelector('.hint');
+
+    const isIos = () => {
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        return /iphone|ipad|ipod/.test( userAgent );
+    }
+    // Detects if device is in standalone mode
+    const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+
+    // Checks if should display install popup notification:
+    if (isIos() && !isInStandaloneMode()) {
+        hint.style.display = 'block';
+    }
 
     if("serviceWorker" in navigator){
         window.addEventListener("load", function(){
